@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "fontBold";
+  src: url("../fonts/PlusJakartaSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "fontRegular";
+  src: url(../fonts/PlusJakartaSans-Regular.woff2) format("woff2");
+}
+
+html {
+  font-size: 62.5%;
+  font-family: fontRegular, sans-serif;
+}
+
+.underline {
+  box-shadow: inset 0 -0.1666666667em 0 0 #fff,
+    inset 0 -0.3333333333em 0 0 #bae6fd;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  font-family: fontBold, sans-serif;
+}
+
+header img {
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+}
+
+header h1 {
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+header h1 img {
+  height: 36px;
+  width: 36px;
+}
+
+header h2 {
+  color: rgb(13, 14, 16);
+  font-weight: bold;
+  font-size: 7rem;
+  max-width: 700px;
+  text-align: center;
+  margin: 10px;
+}
+
+header p {
+  font-size: 2.5rem;
+  font-family: fontReglar, sans-serif;
+  text-align: center;
+  max-width: 600px;
+  margin: 20px;
+}
+
+header p a {
+  color: rgb(13, 14, 16);
+}
+
+header > a,
+main > a {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: rgb(256, 256, 256);
+  background-color: rgb(13, 14, 16);
+  border-radius: 50px;
+  padding: 24px 52px 24px 52px;
+  font-family: fontBold, sans-serif;
+  margin: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section, div {
+  margin: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90vw;
+  background-color: rgb(244, 245, 253);
+}
+
+main section article {
+  background-color: rgb(256, 256, 256);
+  margin: 15px;
+  padding: 48px 32px 48px 32px;
+}
+
+main section h2 {
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(13, 14, 16);
+  text-align: center;
+}
+
+main section article,
+main section article img {
+  width: 30vw;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+main section article h3 a {
+  color: rgb(13, 14, 16);
+  text-decoration: none;
+  font-size: 2.4rem;
+}
+
+main section article p {
+  font-size: 1.6rem;
+  color: rgb(63, 68, 81);
+}
+
+main >a img {
+  width: 24px;
+  margin-right: 6px;
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+  header > a,
+  main section > a {
+    padding: 20px 42px 20px 42px;
+  }
+}

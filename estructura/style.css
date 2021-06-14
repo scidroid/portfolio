@@ -1,0 +1,161 @@
+:root {
+  --font: "Ubuntu", sans-serif;
+  --title-weight: 700;
+  --text-weight: 400;
+  --minor-weight: 300;
+  --primary-color: #f5e6ca;
+  --secondary-color: #fb9300;
+  --terceary-color: #f54748;
+  --quaternary-color: #343f56;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font);
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  padding: 10px 10px 0px 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: var(--title-weight);
+  padding: 5px;
+  margin: 5px;
+}
+
+header h2 {
+  font-size: 2rem;
+  font-weight: var(--text-weight);
+  padding-bottom: 10px;
+}
+
+nav {
+  background-color: var(--secondary-color);
+  padding: 5px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+  width: 98vw;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: var(--minor-weight);
+  margin: 10px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  background-color: var(--terceary-color);
+  color: var(--primary-color);
+}
+
+aside h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 7px;
+}
+
+aside p,
+section p {
+  font-size: 2.2rem;
+  padding: 8px;
+}
+
+aside article {
+  display: flex;
+  flex-direction: column;
+}
+
+aside article img {
+  width: 150px;
+  height: 150px;
+  margin: auto auto;
+}
+
+main section {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main section h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 15px;
+}
+
+main section img {
+  width: 50vw;
+  max-width: 450px;
+  min-width: 280px;
+}
+
+main section article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+pre {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 12px 0 10px;
+  font-size: 2rem;
+  background-color: white;
+  width: 50vw;
+  min-width: 280px;
+}
+
+code {
+  white-space: pre-wrap;
+}
+
+footer {
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: var(--quaternary-color);
+  padding: 10px;
+  color: var(--primary-color);
+}
+
+@media (min-width: 600px) {
+  main aside {
+    width: 30vw;
+  }
+  main section {
+    width: 70vw;
+  }
+  main {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:image" content="https://link.scidroid.me/avatar.jpg" />
+    <meta
+      name="og:description"
+      content="Aprende como se estructura una página web, que es y para que sirve HTML & CSS y la estructura básica de una web."
+    />
+    <meta property="og:title" content="Estructura web con HTML & CSS" />
+    <link rel="icon" href="https://link.scidroid.me/avatar.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>HTML tags</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML & CSS</h1>
+      <h2>Etiquetas y estructuración web.</h2>
+      <nav>
+        <ul>
+          <li><a href="#structure">Estructura</a></li>
+          <li><a href="#tags">Etiquetas</a></li>
+          <li><a href="#styles">Estilos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside>
+        <article>
+          <h3>¿Que es HTML?</h3>
+          <p>
+            HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup
+            Language) es el componente más básico de la Web. Define el
+            significado y la estructura del contenido web. Además de HTML,
+            generalmente se utilizan otras tecnologías para describir la
+            apariencia/presentación de una página web (CSS) o la
+            funcionalidad/comportamiento.
+          </p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/230px-HTML5_logo_and_wordmark.svg.png"
+            alt="html logo"
+          />
+          <p>
+            "Hipertexto" hace referencia a los enlaces que conectan páginas web
+            entre sí, ya sea dentro de un único sitio web o entre sitios web.
+            Los enlaces son un aspecto fundamental de la Web. Al subir contenido
+            a Internet y vincularlo a las páginas creadas por otras personas, te
+            conviertes en un participante activo en la «World Wide Web».
+          </p>
+        </article>
+        <article>
+          <h3>¿Que es CSS?</h3>
+          <p>
+            una página web es realmente un documento de texto. En dicho
+            documento se escribe código HTML, con el que se que crea el
+            contenido de una web. Por otro lado, existe el código CSS, que unido
+            al código HTML permite darle forma, color, posición (y otras
+            características visuales) a una página.
+          </p>
+          <img src="https://lenguajecss.com/assets/logo.svg" alt="CSS logo" />
+          <p>
+            Las siglas CSS (Cascading Style Sheets) significan «Hojas de estilo
+            en cascada» y parten de un concepto simple pero muy potente: aplicar
+            estilos (colores, formas, márgenes, etc...) a uno o varios
+            documentos (generalmente documentos HTML, páginas webs) de forma
+            masiva.
+          </p>
+        </article>
+        <article>
+          <h3>¿Que otras tecnologias hay?</h3>
+          <h3>Javascript</h3>
+          <img
+            src="data:image/png;base64,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"
+            alt="JavaScript logo"
+          />
+          <p>
+            JavaScript es un lenguaje de programación o de secuencias de
+            comandos que te permite implementar funciones complejas en páginas
+            web, cada vez que una página web hace algo más que sentarse allí y
+            mostrar información estática para que la veas, muestra oportunas
+            actualizaciones de contenido, mapas interactivos, animación de
+            Gráficos 2D/3D, desplazamiento de máquinas reproductoras de vídeo,
+            etc., puedes apostar que probablemente JavaScript está involucrado.
+            Es la tercera capa del pastel de las tecnologías web estándar, dos
+            de las cuales (HTML y CSS) hemos cubierto con mucho más detalle en
+            otras partes del Área de aprendizaje.
+          </p>
+        </article>
+      </aside>
+      <section>
+        <article id="structure">
+          <h2>¿Cual es la estructura de una pagina web?</h2>
+          <img
+            src="https://aprende-web.net/NT/objetos/diseno_html5.gif"
+            alt="estructura web"
+          />
+        </article>
+        <article id="tags">
+          <h2>Principles etiquetas de HTML</h2>
+          <p>
+            Para hacer nuestra estructura de HTML, podemos usar este codigo de
+            ejemplo.
+          </p>
+          <pre class="prettyprint lang-html">
+            <code>  
+&lt;!DOCTYPE html&gt;
+  &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+      &lt;meta charset=&quot;UTF-8&quot; /&gt;
+      &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+      &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt;
+      &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;header&gt;
+        &lt;nav&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/nav&gt;
+      &lt;/header&gt;
+      &lt;main&gt;
+        &lt;aside&gt;&lt;/aside&gt;
+        &lt;section&gt;
+          &lt;article&gt;&lt;/article&gt;
+          &lt;article&gt;&lt;/article&gt;
+          &lt;article&gt;&lt;/article&gt;
+        &lt;/section&gt;
+      &lt;/main&gt;
+      &lt;footer&gt;&lt;/footer&gt;
+      &lt;style&gt;&lt;/style&gt;
+    &lt;/body&gt;
+  &lt;/html&gt; 
+          </code>
+          </pre>
+        </article>
+        <article id="styles">
+          <h2>¿Como se le aplica estilos a una web?</h2>
+          <p>
+            Para aplicar estilos a una web necesitamos usar CSS, este lo podemos
+            escribir dentr de una etiqueta llamada style
+          </p>
+          <p>Anatomia de una etiqueta de CSS</p>
+          <img
+            src="https://mdn.mozillademos.org/files/11925/csspartes.png"
+            alt="Anatomia de una etiqueta de CSS"
+          />
+          <p>Ejemplo de codigo en css</p>
+          <pre class="prettyprint lang-html">
+            <code>
+&lt;style&gt;
+  body {
+    background-color: blue; /* Cambia el color del fondo */
+  }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif; /* Cambia la fuente de un texto */
+  }
+  p {
+    font-size: 17px; /* cambia el tamaño de un texto */
+  }
+&lt;/style&gt;
+            </code>
+          </pre>
+          <p style="padding: 10px">
+            Si quieres ver el código HTML y CSS que usa esta pagina
+            <a
+              href="https://github.com/scidroid/dotme/blob/main/estructura"
+              target="_BLANK"
+              >pulsa aquí</a
+            >
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Pagina hecha con HTML & CSS y un poco de javascript por Juan Almanza :)
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  </body>
+  <script
+    async=""
+    defer=""
+    src="https://scripts.simpleanalyticscdn.com/latest.js"
+  ></script>
+  <noscript
+    ><img
+      src="https://queue.simpleanalyticscdn.com/noscript.gif"
+      alt=""
+      referrerpolicy="no-referrer-when-downgrade"
+  /></noscript>
+</html>
