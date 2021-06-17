@@ -49,6 +49,17 @@
         >.
       </p>
     </header>
+    <main>
+      <form action="https://scidroid.pythonanywhere.com/add/msg" method="post">
+        <input type="text" name="name" id="name"required autocomplete="name" placeholder="What's your name?"/><input
+          type="email"
+          name="email"
+          id="email" required autocomplete="email" placeholder="Enter your Email"
+        /><input type="text" name="msg" id="msg" required placeholder="Tell me about you consult" />
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+    <footer><p>Developed by SciDroid under MIT license</p></footer>
     <script
       async
       defer
