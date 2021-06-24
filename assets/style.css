@@ -109,6 +109,7 @@ main h2 {
   text-align: center;
   color: rgb(13, 14, 16);
   text-align: center;
+  max-width: 70vw;
 }
 
 main section article,
@@ -134,24 +135,34 @@ main > a img {
   margin-right: 6px;
 }
 
-main > div table tr th {
-  padding: 20px 20px 20px 5px;
-  font-size: 2.4rem;
-  color: rgb(13, 14, 16);
-  text-align: start;
-}
-
-main table tr td {
-  font-size: 1.6rem;
-  color: rgb(63, 68, 81);
-  padding: 5px;
-}
-
-main > div {
+main > ul {
   display: flex;
   flex-wrap: wrap;
-  margin: 25px;
+  list-style: none;
   justify-content: center;
+}
+
+main > ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > ul li h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+main > ul li img {
+  width: 80vw;
+  min-width: 280px;
+  max-width: 500px;
+}
+
+main > ul li p {
+  font-size: 1.6rem;
+  text-align: center;
+  max-width: 500px;
 }
 
 form {
@@ -171,24 +182,29 @@ input[type="email"] {
   font-size: 2.4rem;
 }
 
-main > form input[type="email"],input[type="text"] {
+main > form input[type="email"],
+input[type="text"] {
   margin-bottom: 40px;
   width: 90vw;
   max-width: 620px;
+  outline: none;
 }
 
-main > div > div {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  max-width: 50vw;
-  min-width: 300px;
-  max-width: 500px;
+main > h3 {
+  font-size: 4.8rem;
 }
 
-main > div > div p {
+main > form > p {
   font-size: 1.6rem;
   text-align: center;
+}
+
+main > p {
+  font-size: 2.5rem;
+}
+
+main > p > a {
+  color: rgb(13, 14, 16);
 }
 
 footer {

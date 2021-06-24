@@ -121,82 +121,71 @@
         rel="noopener noreferrer"
         ><img src="assets/devto.svg" alt="Dev.to Logo" /> More posts</a
       >
-      <div>
-        <div>
-          <h2><b class="underline">Skills</b></h2>
-          <table>
-            <tr>
-              <th>FrontEnd</th>
-              <th>BackEnd</th>
-            </tr>
-            <tr>
-              <td>HTML</td>
-              <td>Python</td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-              <td>NodeJS</td>
-            </tr>
-            <tr>
-              <td>Tailwind CSS</td>
-              <td>Ruby</td>
-            </tr>
-            <tr>
-              <td>SCSS</td>
-              <td>Flask</td>
-            </tr>
-            <tr>
-              <td>Javascript Vanilla</td>
-              <td>MongoDB</td>
-            </tr>
-            <tr>
-              <td>Svelte</td>
-              <td>MySQL</td>
-            </tr>
-          </table>
-        </div>
-        <div>
-          <h2>Subscribe to my <b class="underline">Newsletter</b>!</h2>
-          <form
-            action="https://r.scidroid.me/add_subscriber"
-            method="post"
-            id="revue-form"
-            name="revue-form"
+      <h2><b class="underline">What can I do?</b></h2>
+      <ul>
+        <li>
+          <h3>FrontEnd</h3>
+          <img src="./assets/frontend.svg" alt="frontend" />
+          <p>
+            I can make responsive websites with modern designs using
+            technologies such as CSS frameworks and Javascript.
+          </p>
+        </li>
+        <li>
+          <h3>BackEnd</h3>
+          <img src="./assets/backend.svg" alt="Backend" />
+          <p>
+            I can make a backend for your website with python or javascript
+            using technologies like NodeJS or FastAPI using third party services
+            like Mailgun.
+          </p>
+        </li>
+      </ul>
+      <h2>Subscribe to my <b class="underline">Newsletter</b>!</h2>
+      <form
+        action="https://r.scidroid.me/add_subscriber"
+        method="post"
+        id="revue-form"
+        name="revue-form"
+        target="_blank"
+      >
+        <input
+          class="revue-form-field"
+          placeholder="Enter your Email"
+          type="email"
+          name="member[email]"
+          id="member_email"
+        /><input
+          type="submit"
+          value="Subscribe"
+          name="member[subscribe]"
+          id="member_submit"
+        />
+        <p>
+          By subscribing, you agree with Revue’s
+          <a
             target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.getrevue.co/terms"
+            >Terms of Service</a
           >
-            <input
-              class="revue-form-field"
-              placeholder="Enter your Email"
-              type="email"
-              name="member[email]"
-              id="member_email"
-            /><input
-              type="submit"
-              value="Subscribe"
-              name="member[subscribe]"
-              id="member_submit"
-            />
-            <p>
-              By subscribing, you agree with Revue’s
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.getrevue.co/terms"
-                >Terms of Service</a
-              >
-              and
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.getrevue.co/privacy"
-                >Privacy Policy</a
-              >.
-            </p>
-          </form>
-        </div>
-      </div>
+          and
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.getrevue.co/privacy"
+            >Privacy Policy</a
+          >.
+        </p>
+      </form>
+      <h2>
+        You like what you see and want to <b class="underline">Contact me</b>?
+      </h2>
+      <a href="contact">Click Here</a>
     </main>
-    <footer><p>Developed by SciDroid under MIT license</p></footer>
+    <footer>
+      <p>Developed by SciDroid under MIT license</p>
+    </footer>
     <script
       async
       defer
