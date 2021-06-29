@@ -10,7 +10,7 @@ const addElement = (title, img, slug, description, url) => {
 fetch("https://dev.to/api/articles?username=scidroid")
   .then((resp) => resp.json())
   .then((resp) => {
-    for (let index = 0; index < resp.length || index > 4; index++) {
+    for (let index = 0; index < resp.length && index < 4; index++) {
       addElement(
         resp[index].title,
         resp[index].cover_image,
@@ -24,6 +24,7 @@ fetch("https://dev.to/api/articles?username=scidroid")
     console.error(err);
     addElement(
       "API error",
+      null,
       null,
       "check your internet connection",
       "https://dev.to/api/articles?username=scidroid"

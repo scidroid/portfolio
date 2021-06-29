@@ -1,11 +1,11 @@
 @font-face {
   font-family: "fontBold";
-  src: url("../fonts/PlusJakartaSans-Bold.woff2") format("woff2");
+  src: url("../../fonts/PlusJakartaSans-Bold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "fontRegular";
-  src: url(../fonts/PlusJakartaSans-Regular.woff2) format("woff2");
+  src: url(../../fonts/PlusJakartaSans-Regular.woff2) format("woff2");
 }
 
 html {
@@ -140,6 +140,8 @@ main > ul {
   flex-wrap: wrap;
   list-style: none;
   justify-content: center;
+  padding: 0;
+  max-width: 100vw;
 }
 
 main > ul li {
@@ -192,11 +194,6 @@ input[type="text"] {
 
 main > h3 {
   font-size: 4.8rem;
-}
-
-main > form > p {
-  font-size: 1.6rem;
-  text-align: center;
 }
 
 main > p {
