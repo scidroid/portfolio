@@ -1,4 +1,4 @@
-for (let page = 1; page < 34; page++) {
+for (let page = 0; page < 34; page++) {
   fetch("https://rickandmortyapi.com/api/character/?page="+page)
     .then((res) => res.json())
     .then((res) => {
