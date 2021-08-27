@@ -3,7 +3,7 @@ const container = document.querySelector("#blog");
 const addElement = (title, img, slug, description, url) => {
   container.insertAdjacentHTML(
     "beforeend",
-    `<article><img src="${img}" alt="${slug}"><h3><a href="${url}" target="_blank" rel="noopener noreferrer">${title}</a></h3><p>${description}</p></article>`
+    `<article><a href="${url}" target="_blank" rel="noopener noreferrer"><img src="${img}" alt="${slug}" loading="lazy" decoding="async"><h3>${title}</h3><p>${description}</p></a></article>`
   );
 };
 
