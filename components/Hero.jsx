@@ -14,7 +14,7 @@ const Hero = () => {
       />
       <h1 className="text-5xl sm:text-7xl max-w-3xl m-8 font-bold text-center">
         <span className="hero-gradient-heading">I develop products</span> that
-        delight and transform comunities.
+        delight and transform communities.
       </h1>
       <p className="text-center max-w-3xl mb-4 text-xl font-medium text-gray-600">
         Hi! I'm Juan, a 14 year old Colombian fullstack web developer and
