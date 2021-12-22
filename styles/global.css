@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "jakarta-sans";
+  src: url("/fonts/PlusJakartaSans-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "jakarta-sans";
+  src: url("/fonts/PlusJakartaSans-Bold.woff2") format("woff2");
+  font-style: bold;
+  font-weight: 800;
+  font-display: swap;
+}
+
+body {
+  font-family: "jakarta-sans", sans-serif;
+}
+
+/* styles that i can't make easily in tailwind */
+
+.footer-cta {
+  background-image: linear-gradient(
+    108deg,
+    #b16cea 14%,
+    #ff5e69 57%,
+    #ff8a56 81%,
+    #ffa84b
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300%;
+}
+
+.footer-cta:hover {
+  animation: flow 2s ease-in-out infinite;
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.button {
+  position: relative;
+  overflow: visible;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.button-up {
+  position: relative;
+  z-index: 1;
+  padding: 20px 30px;
+  background-color: #000;
+}
+
+.button-up:hover {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.button-down {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  padding: 20px 30px;
+  background-image: linear-gradient(
+    108deg,
+    #b16cea 8%,
+    #ff5e69 40%,
+    #ff8a56 77%,
+    #ffa84b 91%
+  );
+  -webkit-transform: translate(7px, 7px);
+  -ms-transform: translate(7px, 7px);
+  transform: translate(7px, 7px);
+}
+
+.button-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 100%;
+  font-weight: 500;
+}
+
+.hero-gradient-heading {
+  display: inline;
+  padding-right: 5px;
+  background-image: linear-gradient(
+    108deg,
+    #b16cea 8%,
+    #ff5e69 40%,
+    #ff8a56 77%,
+    #ffa84b 91%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
