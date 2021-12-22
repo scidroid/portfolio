@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import splitbee from "@splitbee/web";
 
 const Header = () => {
   return (
@@ -11,7 +12,7 @@ const Header = () => {
       </Link>
       <section>
         <Link href="/contact">
-          <a className="text-lg font-bold">
+          <a onClick={() => splitbee.track("Book a call clicked")} className="text-lg font-bold">
             Book a call
             <Image
               src="https://assets.website-files.com/5fef5619b640934b33c2385e/5ff019fc559a4200eda62273_Vector.svg"

@@ -45,7 +45,7 @@ vercel
 
 ## Author
 
-👤 **SciDroid <scidroid@scidroid.co>**
+👤 **SciDroid <scidroid@scidroid.me>**
 
 - Website: [scidroid.co](https://scidroid.co)
 - Twitter: [@scidroid](https://twitter.com/scidroid)

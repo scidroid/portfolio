@@ -4,6 +4,7 @@ import Head from "next/head";
 import { DefaultSeo } from "next-seo";
 import Layout from "components/Layout";
 import "styles/global.css";
+import 'animate.css';
 
 const App = ({ Component, pageProps }) => {
   useEffect(() => {
