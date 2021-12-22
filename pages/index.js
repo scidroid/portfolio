@@ -16,7 +16,7 @@ const Index = () => {
             "Juan Almanza A.K.A SciDroid is a 14 year old fullstack web developer, competitive programmer (2nd place at Colombian Computer Olympiad) and serial hackathon winner (winner in 9 of 12 hackathons), specialized in React, Svelte, Python and javascript in general. If you need someone to develop websites and web applications do not hesitate to contact Juan and you will never regret it.",
           images: [
             {
-              url: "/avatar.png",
+              url: "https://scidroid.co/avatar.png",
               alt: "Juan Almanza A.K.A SciDroid",
               type: "image/png",
             },

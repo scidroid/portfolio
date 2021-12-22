@@ -4,7 +4,7 @@ import Head from "next/head";
 import { DefaultSeo } from "next-seo";
 import Layout from "components/Layout";
 import "styles/global.css";
-import 'animate.css';
+import "animate.css";
 
 const App = ({ Component, pageProps }) => {
   useEffect(() => {
@@ -34,7 +34,7 @@ const App = ({ Component, pageProps }) => {
         openGraph={{
           type: "website",
           locale: "en_US",
-          url: "https://scidroid.me",
+          url: "https://scidroid.co",
           site_name: "SciDroid's portfolio",
         }}
         twitter={{
