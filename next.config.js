@@ -15,4 +15,7 @@ const rewrites = async () => [
 
 module.exports = {
   rewrites,
+  images: {
+    domains: ["s2.loli.net"],
+  },
 };

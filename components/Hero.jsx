@@ -32,7 +32,7 @@ const Hero = () => {
           </Button>
         </div>
         <div className="block m-2">
-          <Link href="/resume.pdf">
+          <Link href="/resume">
             <a
               onClick={() => splitbee.track("Resume viewved")}
               className="text-lg font-bold"

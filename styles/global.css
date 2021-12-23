@@ -115,3 +115,40 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.blog-container h2 {
+  @apply text-4xl mb-2 mt-2 font-bold;
+}
+
+.blog-container h3 {
+  @apply text-3xl mb-2 mt-2 font-bold;
+}
+
+.blog-container p {
+  @apply text-lg mb-4;
+}
+
+.blog-container img {
+  @apply w-5/6 max-h-full object-cover object-bottom mt-2 mb-2;
+}
+
+.blog-container a {
+  @apply underline hover:no-underline;
+}
+
+.blog-container img {
+  margin: 0 auto;
+  @apply mt-2 mb-2;
+}
+
+.blog-container table {
+  @apply w-full table-auto border mt-2 mb-2;
+}
+
+.blog-container thead {
+  @apply bg-gray-200 border-b-2;
+}
+
+.blog-container tr {
+  @apply border-b border-black;
+}
