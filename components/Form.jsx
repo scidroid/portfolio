@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
+import splitbee from "@splitbee/web";
 
 const Form = () => {
   return (
@@ -53,6 +54,12 @@ const Form = () => {
           data-splitbee-event="Contact form filled"
           autoComplete="on"
           className="max-w-xl w-full flex flex-col"
+          onSubmit={(e) => {
+            splitbee.user.set({
+              email: e.target.email.value,
+              name: e.target.name.value,
+            });
+          }}
         >
           <div className="flex flex-col mt-2 mb-2">
             <label className="text-xl font-bold mb-2">Name</label>
