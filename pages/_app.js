@@ -29,9 +29,13 @@ const App = ({ Component, pageProps }) => {
           crossOrigin=""
         />
         <meta property="og:site_name" content="SciDroid" />
-        <meta property="og:type" content="website" />
-        <meta property="og:local" content="en_US" />
-        <meta property="og:base_url" content="https://scidroid.co" />
+        <meta property="og:type" content="website" key={"ogtype"} />
+        <meta property="og:local" content="en_US" key={"oglocal"} />
+        <meta
+          property="og:base_url"
+          content="https://scidroid.co"
+          key={"ogbaseurl"}
+        />
       </Head>
       <Layout>
         <Component {...pageProps} />

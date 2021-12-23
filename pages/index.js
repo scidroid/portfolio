@@ -15,14 +15,20 @@ const Index = ({ posts }) => {
         <meta
           name="description"
           content="Juan Almanza A.K.A SciDroid is a 14 year old fullstack web developer, competitive programmer (2nd place at Colombian Computer Olympiad) and serial hackathon winner (winner in 9 of 12 hackathons), specialized in React, Svelte, Python and javascript in general. If you need someone to develop websites and web applications do not hesitate to contact Juan and you will never regret it."
+          key={"description"}
         />
-        <meta property="og:title" content="Home | SciDroid" />
+        <meta property="og:title" content="Home | SciDroid" key={"ogtitle"} />
         <meta
           property="og:description"
           content="Juan Almanza A.K.A SciDroid is a 14 year old fullstack web developer, competitive programmer (2nd place at Colombian Computer Olympiad) and serial hackathon winner (winner in 9 of 12 hackathons), specialized in React, Svelte, Python and javascript in general. If you need someone to develop websites and web applications do not hesitate to contact Juan and you will never regret it."
+          key={"ogdescription"}
         />
-        <meta property="og:image" content="https://scidroid.co/avatar.png" />
-        <meta property="og:url" content="https://scidroid.co" />
+        <meta
+          property="og:image"
+          content="https://scidroid.co/avatar.png"
+          key={"ogimage"}
+        />
+        <meta property="og:url" content="https://scidroid.co" key={"ogurl"} />
       </Head>
       <Hero />
       <Logos />
