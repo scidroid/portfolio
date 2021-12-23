@@ -1,4 +1,5 @@
 import Link from "next/link";
+import splitbee from "@splitbee/web";
 
 const Footer = () => {
   return (
@@ -8,8 +9,11 @@ const Footer = () => {
           Ready to make something kickass?
         </p>
         <Link href="/contact">
-          <a className="footer-cta text-4xl sm:text-5xl mt-6 font-bold">
-            Let's get on a call.
+          <a
+            onClick={() => splitbee.track("contact clicked")}
+            className="footer-cta text-4xl sm:text-5xl mt-6 font-bold"
+          >
+            Let's start talking.
           </a>
         </Link>
       </section>

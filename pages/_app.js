@@ -1,7 +1,6 @@
 import splitbee from "@splitbee/web";
 import { useEffect } from "react";
 import Head from "next/head";
-import { DefaultSeo } from "next-seo";
 import Layout from "components/Layout";
 import "styles/global.css";
 import "animate.css";
@@ -29,20 +28,11 @@ const App = ({ Component, pageProps }) => {
           as="font"
           crossOrigin=""
         />
+        <meta property="og:site_name" content="SciDroid" />
+        <meta property="og:type" content="website" />
+        <meta property="og:local" content="en_US" />
+        <meta property="og:base_url" content="https://scidroid.co" />
       </Head>
-      <DefaultSeo
-        openGraph={{
-          type: "website",
-          locale: "en_US",
-          url: "https://scidroid.co",
-          site_name: "SciDroid's portfolio",
-        }}
-        twitter={{
-          handle: "@scidroid",
-          site: "@scidroid",
-          cardType: "summary_large_image",
-        }}
-      />
       <Layout>
         <Component {...pageProps} />
       </Layout>

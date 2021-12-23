@@ -12,8 +12,11 @@ const Header = () => {
       </Link>
       <section>
         <Link href="/contact">
-          <a onClick={() => splitbee.track("Book a call clicked")} className="text-lg font-bold">
-            Book a call
+          <a
+            onClick={() => splitbee.track("contact clicked")}
+            className="text-lg font-bold"
+          >
+            Book a meeting
             <Image
               src="https://assets.website-files.com/5fef5619b640934b33c2385e/5ff019fc559a4200eda62273_Vector.svg"
               loading="lazy"

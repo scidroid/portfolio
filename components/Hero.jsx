@@ -25,10 +25,10 @@ const Hero = () => {
         <div className="block m-2">
           <Button
             href="/contact"
-            onClick={() => splitbee.track("Book a call clicked")}
+            onClick={() => splitbee.track("contact clicked")}
             TailwindStyles="mr-8"
           >
-            <p className="font-bold">Book a call</p>
+            <p className="font-bold">Get in touch</p>
           </Button>
         </div>
         <div className="block m-2">

@@ -7,6 +7,10 @@ const rewrites = async () => [
     destination: "https://hive.splitbee.io/:slug",
     source: "/sb-api/:slug",
   },
+  {
+    destination: "/resume.pdf",
+    source: "/resume",
+  }
 ];
 
 module.exports = {
