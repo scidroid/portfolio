@@ -18,7 +18,7 @@ const Header = () => {
           >
             Book a meeting
             <Image
-              src="https://assets.website-files.com/5fef5619b640934b33c2385e/5ff019fc559a4200eda62273_Vector.svg"
+              src="/arrow.svg"
               loading="lazy"
               width="24"
               height="13"

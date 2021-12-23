@@ -2,8 +2,12 @@ import Head from "next/head";
 import Hero from "components/Hero";
 import Logos from "components/Logos";
 import Services from "components/Services";
+import Posts from "components/Posts";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
 
-const Index = () => {
+const Index = ({ posts }) => {
   return (
     <>
       <Head>
@@ -23,8 +27,32 @@ const Index = () => {
       <Hero />
       <Logos />
       <Services />
+      <Posts posts={posts} />
     </>
   );
+};
+
+export const getStaticProps = async () => {
+  const files = fs.readdirSync(path.join("content"));
+
+  const posts = files.map((filename) => {
+    const markdownWithMeta = fs.readFileSync(
+      path.join("content", filename),
+      "utf-8"
+    );
+    const { data: frontMatter } = matter(markdownWithMeta);
+
+    return {
+      frontMatter,
+      slug: filename.split(".")[0],
+    };
+  });
+
+  return {
+    props: {
+      posts,
+    },
+  };
 };
 
 export default Index;

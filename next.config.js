@@ -10,12 +10,9 @@ const rewrites = async () => [
   {
     destination: "/resume.pdf",
     source: "/resume",
-  }
+  },
 ];
 
 module.exports = {
   rewrites,
-  images: {
-    domains: ["assets.website-files.com"],
-  },
 };
