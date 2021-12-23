@@ -10,7 +10,7 @@ const rewrites = async () => [
   {
     destination: "/resume.pdf",
     source: "/resume",
-  },
+  }
 ];
 
 module.exports = {
