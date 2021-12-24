@@ -6,6 +6,7 @@ import Posts from "components/Posts";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import Projects from "components/Projects";
 
 const Index = ({ posts }) => {
   return (
@@ -34,6 +35,7 @@ const Index = ({ posts }) => {
       <Logos />
       <Services />
       <Posts posts={posts} />
+      <Projects />
     </>
   );
 };

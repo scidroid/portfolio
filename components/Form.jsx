@@ -58,6 +58,7 @@ const Form = () => {
             splitbee.user.set({
               email: e.target.email.value,
               name: e.target.name.value,
+              last_message: e.target.message.value,
             });
           }}
         >
