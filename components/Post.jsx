@@ -3,6 +3,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { useEffect, useState } from "react";
 import mediumZoom from "medium-zoom";
 import Head from "next/head";
+import { Giscus } from "@giscus/react";
 
 const Post = ({
   frontMatter: { title, date, description, banner },
@@ -48,21 +49,16 @@ const Post = ({
             <article className="blog-container mt-12">
               <MDXRemote {...mdxSource} components={{ SyntaxHighlighter }} />
             </article>
-            <script
-              src="https://giscus.app/client.js"
-              type="text/javascript"
-              data-repo="scidroid/portfolio"
-              data-repo-id="MDEwOlJlcG9zaXRvcnkzNzY3MDExNjM="
-              data-category="General"
-              data-category-id="DIC_kwDOFnQA684CAZ5E"
-              data-mapping="pathname"
-              data-reactions-enabled="1"
-              data-emit-metadata="1"
-              data-theme="light"
-              data-lang="en"
-              crossorigin="anonymous"
-              async
-            ></script>
+            <Giscus
+              repo="scidroid/portfolio"
+              repoId="MDEwOlJlcG9zaXRvcnkzNzY3MDExNjM="
+              category="General"
+              categoryId="DIC_kwDOFnQA684CAZ5E"
+              mapping="pathname"
+              reactionsEnabled="1"
+              emitMetadata="1"
+              theme="light"
+            />
           </article>
         </section>
       </div>

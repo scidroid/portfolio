@@ -14,10 +14,17 @@ const Projects = () => {
             CollegeLoans
           </h2>
           <p className="mb-4 text-lg text-gray-600 md:text-xl">
-            Search your ideal college in minutes, and dicover how to pay for it.
+            CollegeLoans is a platform that allows you to do college planning
+            based on your SAT scores and annual income so that you can study
+            without any unforeseen events. It tracks and predicts your debt
+            based on your income and also recommends schools based on your SAT
+            scores.
           </p>
-          <a href="https://collegeloan.us/" className="text-lg font-bold flex">
-            Live demo
+          <a
+            href="https://devpost.com/software/collegeloans/"
+            className="text-lg font-bold flex"
+          >
+            More info
             <img
               src="/arrow.svg"
               loading="lazy"
@@ -46,7 +53,12 @@ const Projects = () => {
           <img src="/mastery.png" className="w-full" alt="Mastery" />
           <h2 className="mt-4 mb-4 font-bold text-2xl md:text-3xl">Mastery</h2>
           <p className="mb-4 text-lg md:text-xl text-gray-600">
-            Mastery learning based education, in web or in your whastapp
+            During the pandemic education had 2 problems, lack of access and low
+            quality. that's why i created mastery, a platform where teachers can
+            apply mastery learning in their classes. allowing students to learn
+            in their own way and at their own pace, and with its whastapp module
+            it allows students with low internet connection to have access to
+            education
           </p>
           <a
             href="https://github.com/scidroid/mastery"
@@ -69,13 +81,17 @@ const Projects = () => {
             GastroWorld
           </h2>
           <p className="mb-4 text-lg text-gray-600 md:text-xl">
-            Discover the best foods of the world and learn how to cook it.
+            GastroWorld lets locals share their recipes of traditional cuisine
+            from their country. We use a huge, gorgeous map as the main menu to
+            access all of the recipes, placing a pin in the map for the location
+            of origin of the recipe. By clicking on the pin, it will take you to
+            a separate section with all of the info about the recipe.
           </p>
           <a
-            href="https://www.youtube.com/watch?v=-Izk-sRrx30"
+            href="https://devpost.com/software/gastroworld"
             className="text-lg font-bold flex"
           >
-            Video demo
+            More info
             <img
               src="/arrow.svg"
               loading="lazy"

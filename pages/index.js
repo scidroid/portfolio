@@ -1,12 +1,14 @@
+// Excuse me, the code is a shit
 import Head from "next/head";
 import Hero from "components/Hero";
 import Logos from "components/Logos";
 import Services from "components/Services";
 import Posts from "components/Posts";
+import Projects from "components/Projects";
+import Awards from "components/Awards";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Projects from "components/Projects";
 
 const Index = ({ posts }) => {
   return (
@@ -26,7 +28,7 @@ const Index = ({ posts }) => {
         />
         <meta
           property="og:image"
-          content="https://scidroid.co/avatar.png"
+          content="https://link.scidroid.me/avatar.png"
           key={"ogimage"}
         />
         <meta property="og:url" content="https://scidroid.co" key={"ogurl"} />
@@ -36,6 +38,7 @@ const Index = ({ posts }) => {
       <Services />
       <Posts posts={posts} />
       <Projects />
+      <Awards />
     </>
   );
 };
