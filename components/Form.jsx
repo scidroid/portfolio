@@ -51,11 +51,15 @@ const Form = () => {
           </a>
         </article>
         <form
-          data-splitbee-event="Contact form filled"
           autoComplete="on"
           className="max-w-xl w-full flex flex-col"
           onSubmit={(e) => {
             splitbee.user.set({
+              email: e.target.email.value,
+              name: e.target.name.value,
+              last_message: e.target.message.value,
+            });
+            splitbee.track("Contact form filled", {
               email: e.target.email.value,
               name: e.target.name.value,
               last_message: e.target.message.value,
