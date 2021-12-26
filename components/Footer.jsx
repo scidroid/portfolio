@@ -18,7 +18,7 @@ const Footer = () => {
         </Link>
       </section>
       <p className="sm:pl-12 text-gray-400 md:pl-32 md:pr-32 mb-2 text-xl">
-        &copy; Developed by Juan Almanza under MIT License
+        &copy; Developed by Juan Almanza under GPL V3 License
       </p>
     </footer>
   );
