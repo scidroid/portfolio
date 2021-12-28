@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Head from "next/head";
 import splitbee from "@splitbee/web";
+import toast, { Toaster } from "react-hot-toast";
 
 const Form = () => {
   return (
@@ -54,18 +55,26 @@ const Form = () => {
           autoComplete="on"
           className="max-w-xl w-full flex flex-col"
           onSubmit={(e) => {
-            splitbee.user.set({
+            e.preventDefault();
+            let data = JSON.parse({
               email: e.target.email.value,
               name: e.target.name.value,
               last_message: e.target.message.value,
             });
-            splitbee.track("Contact form filled", {
-              email: e.target.email.value,
-              name: e.target.name.value,
-              last_message: e.target.message.value,
+            splitbee.user.set(data);
+            toast.promise(splitbee.track("Contact form filled", data), {
+              loading: "Saving...",
+              success: (
+                <b>
+                  Hey {data.name}, your message was saved, check your email!!!
+                </b>
+              ),
+              error: <b>Oh no, we can't save your message, try again.</b>,
+              duration: 5000,
             });
           }}
         >
+          <Toaster />
           <div className="flex flex-col mt-2 mb-2">
             <label className="text-xl font-bold mb-2">Name</label>
             <input
