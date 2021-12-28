@@ -71,7 +71,7 @@ const Form = () => {
                 loading: "Saving...",
                 success: (
                   <b>
-                    Hey {data.name}, your message was saved, check your email!!!
+                    Hey {e.target.name.value}, your message was saved, check your email!!!
                   </b>
                 ),
                 error: <b>Oh no, we can't save your message, try again.</b>,
