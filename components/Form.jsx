@@ -56,22 +56,28 @@ const Form = () => {
           className="max-w-xl w-full flex flex-col"
           onSubmit={(e) => {
             e.preventDefault();
-            let data = JSON.parse({
+            splitbee.user.set({
               email: e.target.email.value,
               name: e.target.name.value,
               last_message: e.target.message.value,
             });
-            splitbee.user.set(data);
-            toast.promise(splitbee.track("Contact form filled", data), {
-              loading: "Saving...",
-              success: (
-                <b>
-                  Hey {data.name}, your message was saved, check your email!!!
-                </b>
-              ),
-              error: <b>Oh no, we can't save your message, try again.</b>,
-              duration: 5000,
-            });
+            toast.promise(
+              splitbee.track("Contact form filled", {
+                email: e.target.email.value,
+                name: e.target.name.value,
+                last_message: e.target.message.value,
+              }),
+              {
+                loading: "Saving...",
+                success: (
+                  <b>
+                    Hey {data.name}, your message was saved, check your email!!!
+                  </b>
+                ),
+                error: <b>Oh no, we can't save your message, try again.</b>,
+                duration: 5000,
+              }
+            );
           }}
         >
           <Toaster />
