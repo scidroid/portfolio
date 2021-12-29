@@ -3,19 +3,21 @@ import Image from "next/image";
 
 const Posts = ({ posts }) => {
   return (
-    <section className="p-6 bg-black flex flex-row flex-wrap justify-around">
+    <section className="p-6 bg-black flex flex-row flex-wrap lg:justify-around">
       <div className="flex flex-col">
         <p className="mt-8 mb-8 hero-gradient-heading text-3xl font-bold">
           BLOG
         </p>
-        <h2 className="text-white font-bold text-5xl text-center w-2/5 min-w-max">
+        <h2 className="text-white font-bold text-4xl lg:text-5xl text-center w-2/5 min-w-max">
           Lastest posts
         </h2>
       </div>
       <section>
         {posts.map((post, index) => (
           <article key={index} className="mt-12 mb-12">
-            <span className="text-gray-400 md:text-lg">{post.frontMatter.date}</span>
+            <span className="text-gray-400 md:text-lg">
+              {post.frontMatter.date}
+            </span>
             <h3 className="mt-2 mb-2 text-2xl md:text-3xl font-bold text-white">
               {post.frontMatter.title}
             </h3>
