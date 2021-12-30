@@ -1,3 +1,16 @@
+const AwardCard = ({ url, name, subtitle }) => {
+  return (
+    <a
+      className="w-5/6 flex flex-col items-center justify-center"
+      href={url}
+      rel="noopener noreferrer"
+    >
+      <h3 className="text-4xl mt-6 mb-6 font-bold text-center">{name}</h3>
+      <p className="text-xl text-gray-600 text-center">{subtitle}</p>
+    </a>
+  );
+};
+
 const Awards = () => {
   return (
     <section className="m-8 flex flex-col items-center justify-center">
@@ -5,59 +18,39 @@ const Awards = () => {
         AWARDS
       </h2>
       <section className="flex flex-wrap items-center justify-around">
-        <article className="w-4/6 md:w-2/6">
-          <a
-            className="w-5/6 flex flex-col items-center justify-center"
-            href="http://oc.uan.edu.co/olimpiada-colombiana-de-computacion"
-          >
-            <h3 className="text-4xl mt-6 mb-6 font-bold text-center">Second Place</h3>
-            <p className="text-xl text-gray-600">
-              Colombian computing Olympiad
-            </p>
-          </a>
-          <a
-            className="w-5/6 flex flex-col items-center justify-center"
-            href="https://devpost.com/software/medicaid-3f2er5"
-          >
-            <h3 className="text-4xl mt-6 mb-6 font-bold text-center">Second place</h3>
-            <p className="text-xl text-gray-600">Hack the valley</p>
-          </a>
-          <a
-            className="w-5/6 flex flex-col items-center justify-center"
-            href="https://devpost.com/software/collegeloans"
-          >
-            <h3 className="text-4xl mt-6 mb-6 font-bold text-center">
-              Second place and best financial data hack
-            </h3>
-            <p className="text-xl text-gray-600">Data day grind 2.0</p>
-          </a>
+        <article className="w-4/6 md:w-2/6 flex flex-col items-center justify-start">
+          <AwardCard
+            url="http://oc.uan.edu.co/olimpiada-colombiana-de-computacion"
+            name="Second Place"
+            subtitle="Colombian computing Olympiad"
+          />
+          <AwardCard
+            url="https://devpost.com/software/medicaid-3f2er5"
+            name="Second place"
+            subtitle="Hack the valley"
+          />
+          <AwardCard
+            url="https://devpost.com/software/collegeloans"
+            name="Second place and best financial data hack"
+            subtitle="Data day grind 2.0"
+          />
         </article>
-        <article className="w-4/6 md:w-2/6">
-          <a
-            className="w-5/6 flex flex-col items-center justify-center"
-            href="https://devpost.com/software/gastroworld"
-          >
-            <h3 className="text-4xl mt-6 mb-6 font-bold text-center">Second place</h3>
-            <p className="text-xl text-gray-600">Bon Hacketit 2.0</p>
-          </a>
-          <a
-            className="w-5/6 flex flex-col items-center justify-center"
-            href="https://devpost.com/software/easytravel-iscyl0"
-          >
-            <h3 className="text-4xl mt-6 mb-6 font-bold text-center">
-              third place and sponsor prizes
-            </h3>
-            <p className="text-xl text-gray-600">Hack around the world</p>
-          </a>
-          <a
-            className="w-5/6 flex flex-col items-center justify-center"
-            href="https://devpost.com/software/awarelms"
-          >
-            <h3 className="text-4xl mt-6 mb-6 font-bold text-center">
-              Best pre-universitary hack
-            </h3>
-            <p className="text-xl text-gray-600">Garuda Hacks v2.0</p>
-          </a>
+        <article className="w-4/6 md:w-2/6 flex flex-col items-center justify-start">
+          <AwardCard
+            url="https://devpost.com/software/gastroworld"
+            name="Second place"
+            subtitle="Bon Hacketit 2.0"
+          />
+          <AwardCard
+            url="https://devpost.com/software/easytravel-iscyl0"
+            name="third place and sponsor prizes"
+            subtitle="Hack around the world"
+          />
+          <AwardCard
+            url="https://devpost.com/software/awarelms"
+            name="Best pre-universitary hack"
+            subtitle="Garuda Hacks v2.0"
+          />
         </article>
       </section>
     </section>
