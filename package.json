@@ -4,7 +4,7 @@
   "description": "My portfolio",
   "repository": "https://github.com/scidroid/portfolio.git",
   "author": "SciDroid <scidroid@scidroid.me>",
-  "license": "MIT",
+  "license": "GPL-v3-or-later",
   "scripts": {
     "start": "next start",
     "build": "next build",
