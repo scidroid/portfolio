@@ -2,8 +2,10 @@ import Image from "next/image";
 import Head from "next/head";
 import splitbee from "@splitbee/web";
 import toast, { Toaster } from "react-hot-toast";
+import { useState } from "react";
 
 const Form = () => {
+  const [submissionCunter, setSubmissionCounter] = useState(0);
   return (
     <>
       <Head>
@@ -56,28 +58,36 @@ const Form = () => {
           className="max-w-xl w-full flex flex-col"
           onSubmit={(e) => {
             e.preventDefault();
-            splitbee.user.set({
-              email: e.target.email.value,
-              name: e.target.name.value,
-              last_message: e.target.message.value,
-            });
-            toast.promise(
-              splitbee.track("Contact form filled", {
+            if (submissionCunter < 3) {
+              setSubmissionCounter(submissionCunter + 1);
+              splitbee.user.set({
                 email: e.target.email.value,
                 name: e.target.name.value,
                 last_message: e.target.message.value,
-              }),
-              {
-                loading: "Saving...",
-                success: (
-                  <b>
-                    Hey {e.target.name.value}, your message was saved, check your email!!!
-                  </b>
-                ),
-                error: <b>Oh no, we can't save your message, try again.</b>,
-                duration: 5000,
-              }
-            );
+              });
+              toast.promise(
+                splitbee.track("Contact form filled", {
+                  email: e.target.email.value,
+                  name: e.target.name.value,
+                  last_message: e.target.message.value,
+                }),
+                {
+                  loading: "Saving...",
+                  success: (
+                    <b>
+                      Hey {e.target.name.value}, your message was saved, check
+                      your email!!!
+                    </b>
+                  ),
+                  error: <b>Oh no, we can't save your message, try again.</b>,
+                  duration: 5000,
+                }
+              );
+            } else {
+              toast.error(
+                "Sorry, you have exceeded the limit of attempts to fill out the form."
+              );
+            }
           }}
         >
           <Toaster />
