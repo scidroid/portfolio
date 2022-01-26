@@ -22,6 +22,10 @@ body {
   font-family: "jakarta-sans", sans-serif;
 }
 
+.padding-b {
+  margin-left: 2px !important;
+}
+
 /* styles that i can't make easily in tailwind */
 
 .footer-cta {

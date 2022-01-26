@@ -7,14 +7,15 @@ const rewrites = async () => [
     destination: "https://hive.splitbee.io/:slug",
     source: "/sb-api/:slug",
   },
-  {
-    destination: "/resume.pdf",
-    source: "/resume",
-  },
 ];
 
 const redirects = async () => {
   return [
+    {
+      source: "/resume",
+      destination: "/resume.pdf",
+      permanent: true
+    },
     {
       source: "/python",
       destination: "/learning-to-code-in-python",

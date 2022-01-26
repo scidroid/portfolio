@@ -11,7 +11,13 @@ const Services = () => {
       </p>
       <section className="m-8 flex flex-wrap flex-row items-center justify-around">
         <article className="m-6 max-w-xs">
-          <Image src="/s1.svg" width={70} height={70} alt="Services image" />
+          <Image
+            src="/s1.svg"
+            width={70}
+            height={70}
+            alt="Aptitudes image"
+            loading="lazy"
+          />
           <h2 className="mt-4 mb-4 font-bold text-2xl md:text-3xl">
             What I can do for you
           </h2>
@@ -26,7 +32,13 @@ const Services = () => {
           </ul>
         </article>
         <article className="m-6 max-w-xs">
-          <Image src="/s2.svg" width={70} height={70} alt="Services image" />
+          <Image
+            src="/s2.svg"
+            width={70}
+            height={70}
+            alt="Experience image"
+            loading="lazy"
+          />
           <h2 className="mt-4 mb-4 font-bold text-2xl md:text-3xl">
             languages I'm fluent in
           </h2>
@@ -41,8 +53,16 @@ const Services = () => {
           </ul>
         </article>
         <article className="m-6 max-w-xs">
-          <Image src="/s3.svg" width={70} height={70} alt="Services image" />
-          <h2 className="mt-4 mb-4 font-bold text-2xl md:text-3xl">What you can expect</h2>
+          <Image
+            src="/s3.svg"
+            width={70}
+            height={70}
+            alt="Habilities image"
+            loading="lazy"
+          />
+          <h2 className="mt-4 mb-4 font-bold text-2xl md:text-3xl">
+            What you can expect
+          </h2>
           <p className="mb-4 text-lg text-gray-600 md:text-xl">
             I make products that are more than pretty. I make it shipable and
             usable

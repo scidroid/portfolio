@@ -30,6 +30,7 @@ const Posts = ({ posts }) => {
                 <Image
                   src="/arrow-w.svg"
                   loading="lazy"
+                  alt="arrow"
                   width="24"
                   height="13"
                 />

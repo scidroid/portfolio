@@ -6,6 +6,7 @@ const Hero = () => {
   return (
     <section className="animate__animated animate__backInUp flex flex-col justify-center items-center sm:p-12 md:pl-32 md:pr-32 p-8">
       <Image
+        priority={true}
         src="/avatar.png"
         width={130}
         height={130}
@@ -57,6 +58,7 @@ const Hero = () => {
           className="m-2"
         >
           <svg
+            id="github"
             width="45px"
             height="45px"
             viewBox="0 0 256 250"
@@ -79,6 +81,7 @@ const Hero = () => {
           className="m-2"
         >
           <svg
+            id="twitter"
             width="45px"
             height="45px"
             viewBox="0 0 256 209"
@@ -101,6 +104,7 @@ const Hero = () => {
           className="m-2"
         >
           <svg
+            id="dev.to"
             width="45px"
             height="45px"
             xmlns="http://www.w3.org/2000/svg"

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Projects = () => {
   return (
     <section className="flex flex-col justify-center items-center m-4 md:m-12">
@@ -9,7 +11,13 @@ const Projects = () => {
       </p>
       <section className="m-8 flex flex-wrap flex-row items-center justify-around">
         <article className="m-6 max-w-xs">
-          <img src="/collegeloans.png" className="w-full" alt="College Loans" />
+          <Image
+            src="/collegeloans.png"
+            width="320"
+            height="180"
+            alt="College Loans"
+            loading="lazy"
+          />
           <h2 className="mt-4 mb-4 font-bold text-2xl md:text-3xl">
             CollegeLoans
           </h2>
@@ -22,35 +30,41 @@ const Projects = () => {
           </p>
           <a
             href="https://devpost.com/software/collegeloans/"
-            className="text-lg font-bold flex"
+            className="text-lg font-bold flex pr-2"
           >
             More info
-            <img
+            <Image
               src="/arrow.svg"
               loading="lazy"
               width="13"
               height="13"
               alt="arrow"
-              className="ml-2"
+              className="padding-b"
             />
           </a>
           <a
             href="https://github.com/pumasteam/collegeloans"
-            className="text-lg font-bold flex"
+            className="text-lg font-bold flex pr-2"
           >
             View github
-            <img
+            <Image
               src="/arrow.svg"
               loading="lazy"
               width="13"
               height="13"
               alt="arrow"
-              className="ml-2"
+              className="padding-b"
             />
           </a>
         </article>
         <article className="m-6 max-w-xs">
-          <img src="/mastery.png" className="w-full" alt="Mastery" />
+          <Image
+            src="/mastery.png"
+            width="320"
+            height="180"
+            alt="Mastery"
+            loading="lazy"
+          />
           <h2 className="mt-4 mb-4 font-bold text-2xl md:text-3xl">Mastery</h2>
           <p className="mb-4 text-lg md:text-xl text-gray-600">
             During the pandemic education had 2 problems, lack of access and low
@@ -62,21 +76,27 @@ const Projects = () => {
           </p>
           <a
             href="https://github.com/scidroid/mastery"
-            className="text-lg font-bold flex"
+            className="text-lg font-bold flex pr-2"
           >
             View github
-            <img
+            <Image
               src="/arrow.svg"
               loading="lazy"
               width="13"
               height="13"
               alt="arrow"
-              className="ml-2"
+              className="padding-b"
             />
           </a>
         </article>
         <article className="m-6 max-w-xs">
-          <img src="/gastroworld.png" className="w-full" alt="GastroWorld" />
+          <Image
+            src="/gastroworld.png"
+            width="320"
+            height="180"
+            alt="GastroWorld"
+            loading="lazy"
+          />
           <h2 className="mt-4 mb-4 font-bold text-2xl md:text-3xl">
             GastroWorld
           </h2>
@@ -89,30 +109,30 @@ const Projects = () => {
           </p>
           <a
             href="https://devpost.com/software/gastroworld"
-            className="text-lg font-bold flex"
+            className="text-lg font-bold flex pr-2"
           >
             More info
-            <img
+            <Image
               src="/arrow.svg"
               loading="lazy"
               width="13"
               height="13"
               alt="arrow"
-              className="ml-2"
+              className="padding-b"
             />
           </a>
           <a
             href="https://github.com/scidroid/gastroworld"
-            className="text-lg font-bold flex"
+            className="text-lg font-bold flex pr-2"
           >
             View github
-            <img
+            <Image
               src="/arrow.svg"
               loading="lazy"
               width="13"
               height="13"
               alt="arrow"
-              className="ml-2"
+              className="padding-b"
             />
           </a>
         </article>
