@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Articles by Juan Almanza</title>
+        <link>https://scidroid.me</link>
+        <description>Cool things I've learned about programming</description>
+        <lastBuildDate>Wed, 26 Jan 2022 13:40:59 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[An introduction to Git: My first commit]]></title>
+            <link>https://scidroid.me/introduction-to-git</link>
+            <guid>https://scidroid.me/introduction-to-git</guid>
+            <pubDate>Wed, 09 Jun 2021 05:00:00 GMT</pubDate>
+            <description><![CDATA[Git allows us to manage, distribute and collaborate on our code so that it is organized and there is an efficient workflow when programming with several people, it will also help us to do things like going back to previous versions of our project.]]></description>
+            <author>scidroid@scidroid.me (Juan Almanza)</author>
+        </item>
+        <item>
+            <title><![CDATA[Learning to code in Python: The Basics]]></title>
+            <link>https://scidroid.me/learning-to-code-in-python</link>
+            <guid>https://scidroid.me/learning-to-code-in-python</guid>
+            <pubDate>Tue, 30 Mar 2021 05:00:00 GMT</pubDate>
+            <description><![CDATA[Learn to program in Python, a high-level, interpreted, multi-paradigm language used for Web with Flask and Django, Artificial Intelligence and Data Science.]]></description>
+            <author>scidroid@scidroid.me (Juan Almanza)</author>
+        </item>
+        <item>
+            <title><![CDATA[Our computers run on sand, a post about silicon.]]></title>
+            <link>https://scidroid.me/our-computers-runs-on-sand</link>
+            <guid>https://scidroid.me/our-computers-runs-on-sand</guid>
+            <pubDate>Sat, 16 Jan 2021 05:00:00 GMT</pubDate>
+            <description><![CDATA[Yes, although it seems incredible what I am saying our economy works with sand. well, not exactly, it is a component of sand called silicon.]]></description>
+            <author>scidroid@scidroid.me (Juan Almanza)</author>
+        </item>
+    </channel>
+</rss>

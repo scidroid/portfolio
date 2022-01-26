@@ -9,6 +9,7 @@ import Awards from "components/Awards";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import generateRSS from "utils/rss";
 
 const Index = ({ posts }) => {
   return (
@@ -58,6 +59,12 @@ export const getStaticProps = async () => {
       slug: filename.split(".")[0],
     };
   });
+
+  posts.sort((a, b) =>
+    new Date(a.frontMatter.date) < new Date(b.frontMatter.date) ? 1 : -1
+  );
+
+  generateRSS(posts);
 
   return {
     props: {

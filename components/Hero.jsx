@@ -33,21 +33,20 @@ const Hero = () => {
           </Button>
         </div>
         <div className="block m-2">
-          <Link href="/resume">
-            <a
-              onClick={() => splitbee.track("Resume viewved")}
-              className="text-lg font-bold"
-            >
-              Get my CV
-              <Image
-                src="/arrow.svg"
-                loading="lazy"
-                width="24"
-                height="13"
-                alt="arrow"
-              />
-            </a>
-          </Link>
+          <a
+            onClick={() => splitbee.track("Resume viewved")}
+            className="text-lg font-bold"
+            href="/resume"
+          >
+            Get my CV
+            <Image
+              src="/arrow.svg"
+              loading="lazy"
+              width="24"
+              height="13"
+              alt="arrow"
+            />
+          </a>
         </div>
       </section>
       <section className="m-4 flex">
