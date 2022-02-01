@@ -68,7 +68,7 @@ const Projects = () => {
           <h2 className="mt-4 mb-4 font-bold text-2xl md:text-3xl">Mastery</h2>
           <p className="mb-4 text-lg md:text-xl text-gray-600">
             During the pandemic education had 2 problems, lack of access and low
-            quality. that's why i created mastery, a platform where teachers can
+            quality. that&apos;s why i created mastery, a platform where teachers can
             apply mastery learning in their classes. allowing students to learn
             in their own way and at their own pace, and with its whastapp module
             it allows students with low internet connection to have access to

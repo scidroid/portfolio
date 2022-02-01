@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
-import splitbee from "@splitbee/web";
+import { handleFormSubmit } from "utils/analytics";
 import toast, { Toaster } from "react-hot-toast";
 import { useState } from "react";
 
@@ -13,7 +13,7 @@ const Form = () => {
         <meta
           key={"description"}
           name="description"
-          content="Have a project in mind? Looking to partner or work together? Reach out through the form and I'll get back to you as soon as possible."
+          content="Have a project in mind? Looking to partner or work together? Reach out through the form and I&apos;ll get back to you as soon as possible."
         />
         <meta
           key={"ogtitle"}
@@ -23,7 +23,7 @@ const Form = () => {
         <meta
           key={"ogdescription"}
           property="og:description"
-          content="Have a project in mind? Looking to partner or work together? Reach out through the form and I'll get back to you as soon as possible."
+          content="Have a project in mind? Looking to partner or work together? Reach out through the form and I&apos;ll get back to you as soon as possible."
         />
         <meta
           key={"ogimage"}
@@ -41,13 +41,13 @@ const Form = () => {
           <h1 className="text-6xl mt-8 mb-16 font-bold">Get in touch</h1>
           <p className="text-gray-600 text-xl">
             Have a project in mind? Looking to partner or work together? Reach
-            out through the form and I'll get back to you as soon as possible.
+            out through the form and I&apos;ll get back to you as soon as possible.
           </p>
           <a
             className="mt-8 mb-8 flex flex-row items-center"
             href="mailto:scidroid@scidroid.me?cc=scidroidgames@gmail.com&subject=Hi%2C%20I%20have%20an%20amazing%20oportunity%20for%20you"
           >
-            <Image src="/mail.svg" width="32" height="32" className="mr-4" />{" "}
+            <Image alt="mail logo" src="/mail.svg" width="32" height="32" className="mr-4" />{" "}
             <span className="text-xl ml-2 text-gray-600 font-bold">
               scidroid@scidroid.me
             </span>
@@ -58,18 +58,13 @@ const Form = () => {
           className="max-w-xl w-full flex flex-col"
           onSubmit={(e) => {
             e.preventDefault();
-            if (submissionCunter < 3) {
+            if (submissionCunter < 2) {
               setSubmissionCounter(submissionCunter + 1);
-              splitbee.user.set({
-                email: e.target.email.value,
-                name: e.target.name.value,
-                last_message: e.target.message.value,
-              });
               toast.promise(
-                splitbee.track("Contact form filled", {
+                handleFormSubmit({
                   email: e.target.email.value,
                   name: e.target.name.value,
-                  last_message: e.target.message.value,
+                  message: e.target.message.value,
                 }),
                 {
                   loading: "Saving...",
@@ -79,7 +74,7 @@ const Form = () => {
                       your email!!!
                     </b>
                   ),
-                  error: <b>Oh no, we can't save your message, try again.</b>,
+                  error: <b>Oh no, we can&apos;t save your message, try again.</b>,
                   duration: 5000,
                 }
               );

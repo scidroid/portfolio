@@ -22,7 +22,7 @@ const Services = () => {
             What I can do for you
           </h2>
           <p className="mb-4 text-lg text-gray-600 md:text-xl">
-            Faster, better products that your users love. Here's all the
+            Faster, better products that your users love. Here&apos;s all the
             services I provide:
           </p>
           <ul>
@@ -40,11 +40,11 @@ const Services = () => {
             loading="lazy"
           />
           <h2 className="mt-4 mb-4 font-bold text-2xl md:text-3xl">
-            languages I'm fluent in
+            languages I&apos;m fluent in
           </h2>
           <p className="mb-4 text-lg md:text-xl text-gray-600">
             Every developer needs the right tools to do the perfect job,
-            Thankfully, I'm multilingual
+            Thankfully, I&apos;m multilingual
           </p>
           <ul>
             <li className="font-bold text-lg">React.js</li>

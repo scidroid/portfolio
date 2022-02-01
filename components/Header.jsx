@@ -1,9 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-import splitbee from "@splitbee/web";
 import { FeedbackFish } from "@feedback-fish/react";
+import { trackEvent } from "utils/analytics";
+import { BiSearch } from "react-icons/bi";
+import { useWindowDimensions } from "utils/hooks";
 
 const Header = () => {
+  const { width } = useWindowDimensions();
+
   return (
     <div className="sticky top-0 backdrop-blur-3xl z-10">
       <header className="flex flex-wrap items-center justify-around p-4">
@@ -13,9 +17,30 @@ const Header = () => {
           </a>
         </Link>
         <section className="flex flex-wrap items-center justify-center">
+          {width > 800 && (
+            <section className="flex flex-row items-center justify-center mr-6">
+              <BiSearch
+                style={{
+                  width: "20px",
+                  height: "20px",
+                  marginRight: "8px",
+                }}
+              />
+              <kbd
+                style={{
+                  padding: "4px 6px",
+                  background: "rgba(0 0 0 / .1)",
+                  borderRadius: "4px",
+                  fontSize: 14,
+                }}
+              >
+                Ctrl + K
+              </kbd>
+            </section>
+          )}
           <FeedbackFish projectId="7b1560278ec928">
             <button
-              onClick={() => splitbee.track("Feedback form clicked")}
+              onClick={() => trackEvent("Feedback form clicked")}
               className="text-lg font-bold mr-6"
             >
               Give feedback
@@ -23,7 +48,7 @@ const Header = () => {
           </FeedbackFish>
           <Link href="/contact">
             <a
-              onClick={() => splitbee.track("contact clicked")}
+              onClick={() => trackEvent("contact clicked")}
               className="text-xl font-bold"
             >
               Get in touch

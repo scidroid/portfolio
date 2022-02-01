@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import Button from "components/Button";
+import { trackEvent } from "utils/analytics";
 
 const Hero = () => {
   return (
@@ -18,7 +18,7 @@ const Hero = () => {
         delight and transform communities.
       </h1>
       <p className="text-center max-w-3xl mb-4 text-xl font-medium text-gray-600">
-        Hi! I'm Juan, a 14 year old Colombian fullstack web developer and
+        Hi! I&apos;m Juan, a 14 year old Colombian fullstack web developer and
         competitive programmer, developing award winning world class
         applications.
       </p>
@@ -26,7 +26,7 @@ const Hero = () => {
         <div className="block m-2">
           <Button
             href="/contact"
-            onClick={() => splitbee.track("contact clicked")}
+            onClick={() => trackEvent("contact clicked")}
             TailwindStyles="mr-8"
           >
             <p className="font-bold">Get in touch</p>
@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
         <div className="block m-2">
           <a
-            onClick={() => splitbee.track("Resume viewved")}
+            onClick={() => trackEvent("Resume viewved")}
             className="text-lg font-bold"
             href="/resume"
           >
@@ -52,7 +52,7 @@ const Hero = () => {
       <section className="m-4 flex">
         <a
           href="https://github.com/scidroid"
-          rel="noopener noreferer"
+          rel="noopener noreferrer"
           target="_BLANK"
           className="m-2"
         >

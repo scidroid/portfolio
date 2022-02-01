@@ -1,9 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+import { trackEvent } from "utils/analytics";
 
 const Posts = ({ posts }) => {
   return (
-    <section className="p-6 bg-black flex flex-row flex-wrap lg:justify-around">
+    <section
+      id="blog"
+      className="p-6 bg-black flex flex-row flex-wrap lg:justify-around"
+    >
       <div className="flex flex-col">
         <p className="mt-8 mb-8 hero-gradient-heading text-3xl font-bold">
           BLOG
@@ -23,7 +27,11 @@ const Posts = ({ posts }) => {
             </h3>
             <Link href={`/${post.slug}`}>
               <a
-                onClick={() => splitbee.track("blog post visited")}
+                onClick={() =>
+                  trackEvent("blog post visited", {
+                    post: post.frontMatter.title,
+                  })
+                }
                 className="mt-4 mb-4 text-lg md:text-xl font-bold text-white"
               >
                 Read this article

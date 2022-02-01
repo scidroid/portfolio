@@ -23,6 +23,7 @@ const generateRSS = (articles) => {
 
   articles.forEach((article) => {
     const {
+      mdxSource,
       frontMatter: { title, date, description, tags },
       slug,
     } = article;
@@ -35,6 +36,7 @@ const generateRSS = (articles) => {
       description,
       author: [author],
       date: new Date(date),
+      content: mdxSource,
     });
   });
 

@@ -18,7 +18,7 @@ const Post = ({
       .then((res) => {
         setViews(res.views);
       });
-  }, []);
+  }, [slug]);
   return (
     <>
       <Head>

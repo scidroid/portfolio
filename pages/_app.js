@@ -1,6 +1,7 @@
 import splitbee from "@splitbee/web";
 import { useEffect } from "react";
 import Head from "next/head";
+import Kbar from "components/Kbar";
 import Layout from "components/Layout";
 import "styles/global.css";
 import "animate.css";
@@ -37,9 +38,11 @@ const App = ({ Component, pageProps }) => {
           key={"ogbaseurl"}
         />
       </Head>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <Kbar>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </Kbar>
     </>
   );
 };
