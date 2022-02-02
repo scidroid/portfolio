@@ -127,7 +127,7 @@ This serves us for example to explain what our code does, I'll show you with an 
 
 <SyntaxHighlighter language="python">
   {`# Program that shows the text "Hello World" in the terminal
-  print("Hello World")`}
+print("Hello World")`}
 </SyntaxHighlighter>
 
 In this case we use the comment to explain the function of a program, but you can write anything inside a comment.
@@ -190,9 +190,7 @@ Now let's talk about the data types in Python, each one has unique properties so
 
 Strings are free text variables, in them we can do anything, and we have to be careful with that because it doesn't matter what a number is if it is in a string, it will be treated as if it were text.
 
-<SyntaxHighlighter language="python">{`
-  string = "This is a string."
-`}</SyntaxHighlighter>
+<SyntaxHighlighter language="python">{`string = "This is a string."`}</SyntaxHighlighter>
 
 All strings are enclosed in quotes, they can be double quotes (") or single quotes (').
 
@@ -204,8 +202,7 @@ We are going to see an example.
   {`katana = """,_._._._._._._._._|__________________________________________________________,
 |_|_|_|_|_|_|_|_|_|_________________________________________________________/
                   ! """
-print(katana)
-`}
+print(katana)`}
 </SyntaxHighlighter>
 if we execute this code this will be the result.
 
@@ -274,13 +271,11 @@ Operators are useful for many things in Python, for example you can use them to 
 
 Let's put an example that we want to make a script where you can place a year and your year of birth and you get how old you will be in that year.
 
-<SyntaxHighlighter language="python">{`
-# We will ask for the year of birth and the year in which you want to calculate your age.
+<SyntaxHighlighter language="python">{`# We will ask for the year of birth and the year in which you want to calculate your age.
 birth_year = int(input("What year were you born?: "))
 year_to_calculated = int(input("In what year do you want to know your age?: "))
 # Now we show the result
-print(f"in {year_to_calculate} your age will be {year_to_calculate - birth_year}")
-`}</SyntaxHighlighter>
+print(f"in {year_to_calculate} your age will be {year_to_calculate - birth_year}")`}</SyntaxHighlighter>
 
 Before you worry to see the `print(f"{var}")` I am going to explain it to you, this is what is called in python a f-print, in this between the keys we can put variables or operations and the result of them will be printed on the screen, this saves us work and complications.
 

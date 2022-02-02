@@ -46,7 +46,7 @@ const Post = ({
           <article className="flex w-5/6 sm:w-4/6 lg:w-3/6 flex-col justify-start m-4">
             <h1 className="mb-4 text-4xl sm:text-6xl font-bold">{title}</h1>
             <p className="text-gray-600 text-2xl">{`${date} - ${views} views`}</p>
-            <article className="blog-container mt-12">
+            <article className="blog-container mt-12 mb-4">
               <MDXRemote {...mdxSource} components={{ SyntaxHighlighter }} />
             </article>
             <Giscus

@@ -1,3 +1,5 @@
+// the code is awful
+
 import {
   KBarProvider,
   KBarPortal,
