@@ -13,7 +13,7 @@ const Post = ({
   const [views, setViews] = useState("Loading");
   useEffect(() => {
     mediumZoom("img");
-    fetch("/api/view/" + slug)
+    fetch(`/api/view/${slug}`)
       .then((res) => res.json())
       .then((res) => {
         setViews(res.views);
