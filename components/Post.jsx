@@ -2,11 +2,11 @@ import { MDXRemote } from "next-mdx-remote";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { useEffect, useState } from "react";
 import mediumZoom from "medium-zoom";
-import Head from "next/head";
 import { Giscus } from "@giscus/react";
+import { NextSeo } from "next-seo";
 
 const Post = ({
-  frontMatter: { title, date, description, banner },
+  frontMatter: { title, date, description, banner, tags },
   mdxSource,
   slug,
 }) => {
@@ -21,26 +21,31 @@ const Post = ({
   }, [slug]);
   return (
     <>
-      <Head>
-        <title>{title + " | SciDroid"}</title>
-        <meta key={"description"} name="description" content={description} />
-        <meta
-          key={"ogtitle"}
-          property="og:title"
-          content={title + " | SciDroid"}
-        />
-        <meta
-          key={"ogdescription"}
-          property="og:description"
-          content={description}
-        />
-        <meta key={"ogimage"} property="og:image" content={banner} />
-        <meta
-          key={"ogurl"}
-          property="og:url"
-          content={"https://scidroid.co/" + slug}
-        />
-      </Head>
+      <NextSeo
+        config={{
+          title: `${title} | Juan Almanza`,
+          description: description,
+          canonical: `https://scidroid.me/${slug}`,
+          openGraph: {
+            title: `${title} | Juan Almanza`,
+            description: description,
+            url: `https://scidroid.me/${slug}`,
+            images: [
+              {
+                url: banner,
+                alt: title,
+              },
+            ],
+            type: "article",
+            article: {
+              publishedTime: date,
+              modifiedTime: date,
+              section: "Blog",
+              tags: tags,
+            },
+          },
+        }}
+      />
       <div className="mt-8 xs:mt-20">
         <section className="flex flex-row flex-wrap justify-center items-center">
           <article className="flex w-5/6 sm:w-4/6 lg:w-3/6 flex-col justify-start m-4">

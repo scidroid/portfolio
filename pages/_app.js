@@ -1,6 +1,8 @@
 import splitbee from "@splitbee/web";
 import { useEffect } from "react";
 import Head from "next/head";
+import { NextSeo } from "next-seo";
+import SEO from "seo.config";
 import Kbar from "components/Kbar";
 import Layout from "components/Layout";
 import "styles/global.css";
@@ -29,15 +31,8 @@ const App = ({ Component, pageProps }) => {
           as="font"
           crossOrigin=""
         />
-        <meta property="og:site_name" content="SciDroid" />
-        <meta property="og:type" content="website" key={"ogtype"} />
-        <meta property="og:local" content="en_US" key={"oglocal"} />
-        <meta
-          property="og:base_url"
-          content="https://scidroid.co"
-          key={"ogbaseurl"}
-        />
       </Head>
+      <NextSeo config={SEO} />
       <Kbar>
         <Layout>
           <Component {...pageProps} />
