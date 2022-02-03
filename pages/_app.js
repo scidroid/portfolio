@@ -8,7 +8,7 @@ import Kbar from "components/Kbar";
 import Layout from "components/Layout";
 import "styles/global.css";
 import "animate.css";
-import 'highlight.js/styles/default.css';
+import "prismjs/themes/prism-tomorrow.css";
 
 const App = ({ Component, pageProps }) => {
   const router = useRouter();

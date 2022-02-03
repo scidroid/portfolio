@@ -3,15 +3,21 @@ import { useEffect, useState } from "react";
 import mediumZoom from "medium-zoom";
 import { Giscus } from "@giscus/react";
 import { NextSeo } from "next-seo";
+const prism = require("prismjs");
+require("prismjs/components/prism-python");
+require("prismjs/components/prism-bash");
+require("prismjs/components/prism-css");
+require("prismjs/components/prism-jsx");
+require("prismjs/components/prism-cshtml");
 
 const Post = ({
   frontMatter: { title, date, description, banner, tags },
   content,
   slug,
 }) => {
-
   const [views, setViews] = useState("Loading");
   useEffect(() => {
+    prism.highlightAll();
     mediumZoom("img");
     fetch(`/api/view/${slug}`)
       .then((res) => res.json())
