@@ -1,5 +1,4 @@
-import { MDXRemote } from "next-mdx-remote";
-import SyntaxHighlighter from "react-syntax-highlighter";
+import md from "markdown-it";
 import { useEffect, useState } from "react";
 import mediumZoom from "medium-zoom";
 import { Giscus } from "@giscus/react";
@@ -7,9 +6,10 @@ import { NextSeo } from "next-seo";
 
 const Post = ({
   frontMatter: { title, date, description, banner, tags },
-  mdxSource,
+  content,
   slug,
 }) => {
+
   const [views, setViews] = useState("Loading");
   useEffect(() => {
     mediumZoom("img");
@@ -38,8 +38,8 @@ const Post = ({
           ],
           type: "article",
           article: {
-            publishedTime: date,
-            modifiedTime: date,
+            publishedTime: new Date(date),
+            modifiedTime: new Date(date),
             section: "Blog",
             tags: tags,
           },
@@ -50,8 +50,12 @@ const Post = ({
           <article className="flex w-5/6 sm:w-4/6 lg:w-3/6 flex-col justify-start m-4">
             <h1 className="mb-4 text-4xl sm:text-6xl font-bold">{title}</h1>
             <p className="text-gray-600 text-2xl">{`${date} - ${views} views`}</p>
-            <article className="blog-container mt-12 mb-4">
-              <MDXRemote {...mdxSource} components={{ SyntaxHighlighter }} />
+            <article className="prose prose-lg blog-container mb-4">
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: md().render(content),
+                }}
+              />
             </article>
             <Giscus
               repo="scidroid/portfolio"

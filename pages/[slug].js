@@ -1,4 +1,3 @@
-import { serialize } from "next-mdx-remote/serialize";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -13,7 +12,7 @@ export const getStaticPaths = async () => {
 
   const paths = files.map((file) => ({
     params: {
-      slug: file.replace(".mdx", ""),
+      slug: file.replace(".md", ""),
     },
   }));
   return {
@@ -24,18 +23,17 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params: { slug } }) => {
   const markdownWithMeta = fs.readFileSync(
-    path.join("content", slug + ".mdx"),
+    path.join("content", slug + ".md"),
     "utf-8"
   );
 
   const { data: frontMatter, content } = matter(markdownWithMeta);
-  const mdxSource = await serialize(content);
 
   return {
     props: {
       frontMatter,
       slug,
-      mdxSource,
+      content,
     },
   };
 };

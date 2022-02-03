@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" 
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://scidroid.me/en/404/</loc>
+        <lastmod>2022-02-03</lastmod>
+		<xhtml:link rel="alternate" hreflang="en" href="https://scidroid.me/en/404/" />
+		<xhtml:link rel="alternate" hreflang="es" href="https://scidroid.me/es/404/" />
+    </url>
+    <url>
+        <loc>https://scidroid.me/es/404/</loc>
+        <lastmod>2022-02-03</lastmod>
+		<xhtml:link rel="alternate" hreflang="en" href="https://scidroid.me/en/404/" />
+		<xhtml:link rel="alternate" hreflang="es" href="https://scidroid.me/es/404/" />
+    </url>
+    <url>
+        <loc>https://scidroid.me/en/api\view/[id]/</loc>
+        <lastmod>2022-02-03</lastmod>
+		<xhtml:link rel="alternate" hreflang="en" href="https://scidroid.me/en/api\view/[id]/" />
+		<xhtml:link rel="alternate" hreflang="es" href="https://scidroid.me/es/api\view/[id]/" />
+    </url>
+    <url>
+        <loc>https://scidroid.me/es/api\view/[id]/</loc>
+        <lastmod>2022-02-03</lastmod>
+		<xhtml:link rel="alternate" hreflang="en" href="https://scidroid.me/en/api\view/[id]/" />
+		<xhtml:link rel="alternate" hreflang="es" href="https://scidroid.me/es/api\view/[id]/" />
+    </url>
+    <url>
+        <loc>https://scidroid.me/en/contact/</loc>
+        <lastmod>2022-02-03</lastmod>
+		<xhtml:link rel="alternate" hreflang="en" href="https://scidroid.me/en/contact/" />
+		<xhtml:link rel="alternate" hreflang="es" href="https://scidroid.me/es/contact/" />
+    </url>
+    <url>
+        <loc>https://scidroid.me/es/contact/</loc>
+        <lastmod>2022-02-03</lastmod>
+		<xhtml:link rel="alternate" hreflang="en" href="https://scidroid.me/en/contact/" />
+		<xhtml:link rel="alternate" hreflang="es" href="https://scidroid.me/es/contact/" />
+    </url>
+    <url>
+        <loc>https://scidroid.me/en/</loc>
+        <lastmod>2022-02-03</lastmod>
+		<xhtml:link rel="alternate" hreflang="en" href="https://scidroid.me/en/" />
+		<xhtml:link rel="alternate" hreflang="es" href="https://scidroid.me/es/" />
+    </url>
+    <url>
+        <loc>https://scidroid.me/es/</loc>
+        <lastmod>2022-02-03</lastmod>
+		<xhtml:link rel="alternate" hreflang="en" href="https://scidroid.me/en/" />
+		<xhtml:link rel="alternate" hreflang="es" href="https://scidroid.me/es/" />
+    </url>
+    <url>
+        <loc>https://scidroid.me/en/[slug]/</loc>
+        <lastmod>2022-02-03</lastmod>
+		<xhtml:link rel="alternate" hreflang="en" href="https://scidroid.me/en/[slug]/" />
+		<xhtml:link rel="alternate" hreflang="es" href="https://scidroid.me/es/[slug]/" />
+    </url>
+    <url>
+        <loc>https://scidroid.me/es/[slug]/</loc>
+        <lastmod>2022-02-03</lastmod>
+		<xhtml:link rel="alternate" hreflang="en" href="https://scidroid.me/en/[slug]/" />
+		<xhtml:link rel="alternate" hreflang="es" href="https://scidroid.me/es/[slug]/" />
+    </url>
+    <url>
+        <loc>https://scidroid.me/en/introduction-to-git/</loc>
+        <lastmod>2022-02-03</lastmod>
+		<xhtml:link rel="alternate" hreflang="en" href="https://scidroid.me/en/introduction-to-git/" />
+		<xhtml:link rel="alternate" hreflang="es" href="https://scidroid.me/es/introduction-to-git/" />
+    </url>
+    <url>
+        <loc>https://scidroid.me/es/introduction-to-git/</loc>
+        <lastmod>2022-02-03</lastmod>
+		<xhtml:link rel="alternate" hreflang="en" href="https://scidroid.me/en/introduction-to-git/" />
+		<xhtml:link rel="alternate" hreflang="es" href="https://scidroid.me/es/introduction-to-git/" />
+    </url>
+    <url>
+        <loc>https://scidroid.me/en/learning-to-code-in-python/</loc>
+        <lastmod>2022-02-03</lastmod>
+		<xhtml:link rel="alternate" hreflang="en" href="https://scidroid.me/en/learning-to-code-in-python/" />
+		<xhtml:link rel="alternate" hreflang="es" href="https://scidroid.me/es/learning-to-code-in-python/" />
+    </url>
+    <url>
+        <loc>https://scidroid.me/es/learning-to-code-in-python/</loc>
+        <lastmod>2022-02-03</lastmod>
+		<xhtml:link rel="alternate" hreflang="en" href="https://scidroid.me/en/learning-to-code-in-python/" />
+		<xhtml:link rel="alternate" hreflang="es" href="https://scidroid.me/es/learning-to-code-in-python/" />
+    </url>
+    <url>
+        <loc>https://scidroid.me/en/our-computers-runs-on-sand/</loc>
+        <lastmod>2022-02-03</lastmod>
+		<xhtml:link rel="alternate" hreflang="en" href="https://scidroid.me/en/our-computers-runs-on-sand/" />
+		<xhtml:link rel="alternate" hreflang="es" href="https://scidroid.me/es/our-computers-runs-on-sand/" />
+    </url>
+    <url>
+        <loc>https://scidroid.me/es/our-computers-runs-on-sand/</loc>
+        <lastmod>2022-02-03</lastmod>
+		<xhtml:link rel="alternate" hreflang="en" href="https://scidroid.me/en/our-computers-runs-on-sand/" />
+		<xhtml:link rel="alternate" hreflang="es" href="https://scidroid.me/es/our-computers-runs-on-sand/" />
+    </url>
+</urlset>
