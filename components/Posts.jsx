@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { trackEvent } from "utils/analytics";
 
-const Posts = ({ posts }) => {
+const Posts = ({ posts, locales }) => {
   return (
     <section
       id="blog"
@@ -12,8 +12,8 @@ const Posts = ({ posts }) => {
         <p className="mt-8 mb-8 hero-gradient-heading text-3xl font-bold">
           BLOG
         </p>
-        <h2 className="text-white font-bold text-4xl lg:text-5xl text-center w-2/5 min-w-max">
-          Lastest posts
+        <h2 className="text-white font-bold text-4xl lg:text-4xl lg:text-center lg:w-2/5 lg:min-w-max">
+          {locales.title}
         </h2>
       </div>
       <section>
@@ -34,7 +34,7 @@ const Posts = ({ posts }) => {
                 }
                 className="mt-4 mb-4 text-lg md:text-xl font-bold text-white"
               >
-                Read this article
+                {locales.cta}
                 <Image
                   src="/arrow-w.svg"
                   loading="lazy"

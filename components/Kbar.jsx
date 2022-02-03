@@ -161,7 +161,10 @@ const Kbar = ({ children }) => {
       shortcut: ["b"],
       keywords: "posts",
       perform: () => router.push("/#blog"),
-      subtitle: "A collection of my posts",
+      subtitle:
+        router.locale === "en"
+          ? "A collection of my posts"
+          : "Una colección de mis artículos",
       icon: (
         <BiNews
           style={{
@@ -173,11 +176,14 @@ const Kbar = ({ children }) => {
     },
     {
       id: "contact",
-      name: "Contact",
+      name: router.locale === "en" ? "Contact" : "Contacto",
       shortcut: ["c"],
       keywords: "email",
       perform: () => router.push("/contact"),
-      subtitle: "Get in touch",
+      subtitle:
+        router.locale === "en"
+          ? "Get in touch"
+          : "Puede contactar conmigo aquí",
       icon: (
         <AiTwotoneContainer
           style={{
@@ -247,7 +253,14 @@ const Kbar = ({ children }) => {
       <KBarPortal>
         <KBarPositioner>
           <KBarAnimator style={animatorStyle}>
-            <KBarSearch style={searchStyle} />
+            <KBarSearch
+              placeholder={
+                router.locale === "en"
+                  ? "Type what you want to search for"
+                  : "Escribe lo que quieres buscar"
+              }
+              style={searchStyle}
+            />
             <RenderResults />
           </KBarAnimator>
         </KBarPositioner>

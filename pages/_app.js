@@ -1,14 +1,17 @@
+import { useRouter } from "next/router";
 import splitbee from "@splitbee/web";
 import { useEffect } from "react";
 import Head from "next/head";
-import { NextSeo } from "next-seo";
-import SEO from "seo.config";
+import { DefaultSeo } from "next-seo";
+import { defaultSeo_en, defaultSeo_es } from "seo.config";
 import Kbar from "components/Kbar";
 import Layout from "components/Layout";
 import "styles/global.css";
 import "animate.css";
 
 const App = ({ Component, pageProps }) => {
+  const router = useRouter();
+
   useEffect(() => {
     splitbee.init({
       apiUrl: "/sb-api",
@@ -32,7 +35,11 @@ const App = ({ Component, pageProps }) => {
           crossOrigin=""
         />
       </Head>
-      <NextSeo config={SEO} />
+      {router.locale === "en" ? (
+        <DefaultSeo {...defaultSeo_en} />
+      ) : (
+        <DefaultSeo {...defaultSeo_es} />
+      )}
       <Kbar>
         <Layout>
           <Component {...pageProps} />

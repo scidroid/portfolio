@@ -22,27 +22,25 @@ const Post = ({
   return (
     <>
       <NextSeo
-        config={{
+        title={`${title} | Juan Almanza`}
+        description={description}
+        canonical={`https://scidroid.me/${slug}`}
+        openGraph={{
           title: `${title} | Juan Almanza`,
           description: description,
-          canonical: `https://scidroid.me/${slug}`,
-          openGraph: {
-            title: `${title} | Juan Almanza`,
-            description: description,
-            url: `https://scidroid.me/${slug}`,
-            images: [
-              {
-                url: banner,
-                alt: title,
-              },
-            ],
-            type: "article",
-            article: {
-              publishedTime: date,
-              modifiedTime: date,
-              section: "Blog",
-              tags: tags,
+          url: `https://scidroid.me/${slug}`,
+          images: [
+            {
+              url: banner,
+              alt: title,
             },
+          ],
+          type: "article",
+          article: {
+            publishedTime: date,
+            modifiedTime: date,
+            section: "Blog",
+            tags: tags,
           },
         }}
       />

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Button from "components/Button";
 import { trackEvent } from "utils/analytics";
 
-const Hero = () => {
+const Hero = ({ locales }) => {
   return (
     <section className="animate__animated animate__backInUp flex flex-col justify-center items-center sm:p-12 md:pl-32 md:pr-32 p-8">
       <Image
@@ -14,13 +14,11 @@ const Hero = () => {
         className="rounded-full"
       />
       <h1 className="text-5xl sm:text-7xl max-w-3xl m-8 font-bold text-center">
-        <span className="hero-gradient-heading">I develop products</span> that
-        delight and transform communities.
+        <span className="hero-gradient-heading">{locales.titlecolor}</span>
+        {locales.title}
       </h1>
       <p className="text-center max-w-3xl mb-4 text-xl font-medium text-gray-600">
-        Hi! I&apos;m Juan, a 14 year old Colombian fullstack web developer and
-        competitive programmer, developing award winning world class
-        applications.
+        {locales.subtitle}
       </p>
       <section className="flex flex-col justify-evenly items-center sm:flex-row flex-wrap">
         <div className="block m-2">
@@ -29,7 +27,7 @@ const Hero = () => {
             onClick={() => trackEvent("contact clicked")}
             TailwindStyles="mr-8"
           >
-            <p className="font-bold">Get in touch</p>
+            <p className="font-bold">{locales.contact}</p>
           </Button>
         </div>
         <div className="block m-2">
@@ -38,7 +36,7 @@ const Hero = () => {
             className="text-lg font-bold"
             href="/resume"
           >
-            Get my CV
+            {locales.cv}
             <Image
               src="/arrow.svg"
               loading="lazy"

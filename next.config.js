@@ -14,7 +14,7 @@ const redirects = async () => {
     {
       source: "/resume",
       destination: "/resume.pdf",
-      permanent: true
+      permanent: true,
     },
     {
       source: "/python",
@@ -49,5 +49,9 @@ module.exports = {
   redirects,
   images: {
     domains: ["s2.loli.net"],
+  },
+  i18n: {
+    locales: ["en", "es"],
+    defaultLocale: "en",
   },
 };

@@ -9,16 +9,31 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import generateRSS from "utils/rss";
+import { useRouter } from "next/router";
+import {
+  hero_en,
+  blog_en,
+  awards_en,
+  logos_en,
+  projects_en,
+  services_en,
+} from "locales/en";
+import { hero, blog, awards, logos, projects, services } from "locales/es";
 
 const Index = ({ posts }) => {
+  const router = useRouter();
+  const selectLocale = (en, es) => {
+    return router.locale == "en" ? en : es;
+  };
+
   return (
     <>
-      <Hero />
-      <Logos />
-      <Services />
-      <Posts posts={posts} />
-      <Projects />
-      <Awards />
+      <Hero locales={selectLocale(hero_en, hero)} />
+      <Logos locales={selectLocale(logos_en, logos)} />
+      <Services locales={selectLocale(services_en, services)} />
+      <Posts posts={posts} locales={selectLocale(blog_en, blog)} />
+      <Projects locales={selectLocale(projects_en, projects)} />
+      <Awards locales={selectLocale(awards_en, awards)} />
     </>
   );
 };

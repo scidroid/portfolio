@@ -11,45 +11,45 @@ const AwardCard = ({ url, name, subtitle }) => {
   );
 };
 
-const Awards = () => {
+const Awards = ({ locales }) => {
   return (
     <section className="m-8 flex flex-col items-center justify-center">
       <h2 className="hero-gradient-heading text-3xl font-bold m-2 text-center">
-        AWARDS
+        {locales.title}
       </h2>
       <section className="flex flex-wrap items-center justify-around">
         <article className="w-4/6 md:w-2/6 flex flex-col items-center justify-start">
           <AwardCard
-            url="http://oc.uan.edu.co/olimpiada-colombiana-de-computacion"
-            name="Second Place"
-            subtitle="Colombian computing Olympiad"
+            url={locales.awards[0].url}
+            name={locales.awards[0].name}
+            subtitle={locales.awards[0].subtitle}
           />
           <AwardCard
-            url="https://devpost.com/software/medicaid-3f2er5"
-            name="Second place"
-            subtitle="Hack the valley"
+            url={locales.awards[1].url}
+            name={locales.awards[1].name}
+            subtitle={locales.awards[1].subtitle}
           />
           <AwardCard
-            url="https://devpost.com/software/collegeloans"
-            name="Second place and best financial data hack"
-            subtitle="Data day grind 2.0"
+            url={locales.awards[2].url}
+            name={locales.awards[2].name}
+            subtitle={locales.awards[2].subtitle}
           />
         </article>
         <article className="w-4/6 md:w-2/6 flex flex-col items-center justify-start">
           <AwardCard
-            url="https://devpost.com/software/gastroworld"
-            name="Second place"
-            subtitle="Bon Hacketit 2.0"
+            url={locales.awards[3].url}
+            name={locales.awards[3].name}
+            subtitle={locales.awards[3].subtitle}
           />
           <AwardCard
-            url="https://devpost.com/software/easytravel-iscyl0"
-            name="third place and sponsor prizes"
-            subtitle="Hack around the world"
+            url={locales.awards[4].url}
+            name={locales.awards[4].name}
+            subtitle={locales.awards[4].subtitle}
           />
           <AwardCard
-            url="https://devpost.com/software/awarelms"
-            name="Best pre-universitary hack"
-            subtitle="Garuda Hacks v2.0"
+            url={locales.awards[5].url}
+            name={locales.awards[5].name}
+            subtitle={locales.awards[5].subtitle}
           />
         </article>
       </section>

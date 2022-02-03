@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-const Logos = () => {
+const Logos = ({ locales }) => {
   return (
     <section className="m-4 animate__animated animate__backInUp">
-      <h2 className="m-2 text-center text-lg text-gray-600">Trusted by</h2>
+      <h2 className="m-2 text-center text-lg text-gray-600">{locales.title}</h2>
       <section className="flex flex-wrap justify-evenly items-center">
         <Image
           src="/mlh.png"
