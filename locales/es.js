@@ -21,6 +21,7 @@ const hero = {
 const blog = {
   title: "Mis ultimos artículos (Solo en inglés)",
   cta: "Lee este artículo",
+  locale: "es",
 };
 
 const contact = {

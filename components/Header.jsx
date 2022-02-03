@@ -1,12 +1,37 @@
-import Link from "next/link";
+import L from "next/link";
 import Image from "next/image";
 import { FeedbackFish } from "@feedback-fish/react";
 import { trackEvent } from "utils/analytics";
 import { BiSearch } from "react-icons/bi";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const Header = ({ locales }) => {
+  const [isMacOs, setIsMacOs] = useState(false);
+
+  useEffect(() => {
+    const isMac = navigator.platform.toUpperCase().indexOf("MAC") >= 0;
+    setIsMacOs(isMac);
+  }, []);
+
   const router = useRouter();
+
+  const { return_locale } = router.query;
+
+  const Link = (props) => (
+    <L
+      {...props}
+      locale={
+        return_locale == "en"
+          ? "en"
+          : return_locale == "es"
+          ? "es"
+          : router.locale
+      }
+    >
+      {props.children}
+    </L>
+  );
 
   const handleLocale = (locale) => {
     trackEvent("locale changed", { locale: locale });
@@ -38,7 +63,7 @@ const Header = ({ locales }) => {
                 fontSize: 14,
               }}
             >
-              Ctrl + K
+              {`${isMacOs ? "⌘" : "Ctrl"} + K`}
             </kbd>
           </section>
           <FeedbackFish projectId="7b1560278ec928" lang={router.locale}>

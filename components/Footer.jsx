@@ -1,7 +1,27 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
+import L from "next/link";
 import { trackEvent } from "utils/analytics";
 
 const Footer = ({ locales }) => {
+  const router = useRouter();
+
+  const { return_locale } = router.query;
+
+  const Link = (props) => (
+    <L
+      {...props}
+      locale={
+        return_locale == "en"
+          ? "en"
+          : return_locale == "es"
+          ? "es"
+          : router.locale
+      }
+    >
+      {props.children}
+    </L>
+  );
+
   return (
     <footer className="bg-black p-6">
       <section className="sm:p-12 md:pl-32 md:pr-32 mb-4 mt-4">
@@ -18,7 +38,7 @@ const Footer = ({ locales }) => {
         </Link>
       </section>
       <p className="sm:pl-12 text-gray-400 md:pl-32 md:pr-32 mb-2 text-xl">
-      {locales.copyrigth}
+        {locales.copyrigth}
       </p>
     </footer>
   );

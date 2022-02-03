@@ -25,7 +25,14 @@ const Posts = ({ posts, locales }) => {
             <h3 className="mt-2 mb-2 text-2xl md:text-3xl font-bold text-white">
               {post.frontMatter.title}
             </h3>
-            <Link href={`/${post.slug}`}>
+            <Link
+              href={`/${post.slug}${
+                locales.locale == "es"
+                  ? "?return_locale=es"
+                  : "?return_locale=en"
+              }`}
+              locale="en"
+            >
               <a
                 onClick={() =>
                   trackEvent("blog post visited", {

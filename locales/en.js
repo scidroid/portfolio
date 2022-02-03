@@ -21,6 +21,7 @@ const hero_en = {
 const blog_en = {
   title: "My posts",
   cta: "Read this article",
+  locale: "en",
 };
 
 const contact_en = {

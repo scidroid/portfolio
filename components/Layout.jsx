@@ -7,11 +7,27 @@ import { header_en, footer_en } from "locales/en";
 const Layout = ({ children }) => {
   const router = useRouter();
 
+  const { return_locale } = router.query;
+
+  const selectLocaleWithFallback = (en, es) => {
+    if (return_locale == "en") {
+      return en;
+    } else if (return_locale == "es") {
+      return es;
+    } else {
+      if (router.locale == "en") {
+        return en;
+      } else {
+        return es;
+      }
+    }
+  };
+  
   return (
     <>
-      <Header locales={router.locale === "en" ? header_en : header} />
+      <Header locales={selectLocaleWithFallback(header_en, header)} />
       <main>{children}</main>
-      <Footer locales={router.locale === "en" ? footer_en : footer} />
+      <Footer locales={selectLocaleWithFallback(footer_en, footer)} />
     </>
   );
 };

@@ -19,6 +19,7 @@ const Post = ({
         setViews(res.views);
       });
   }, [slug]);
+
   return (
     <>
       <NextSeo
