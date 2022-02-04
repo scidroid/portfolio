@@ -153,6 +153,11 @@ const services_en = {
   ],
 };
 
+const stack_en = {
+  title: "STACK",
+  subtitle: "I use the best tools to make the best products",
+};
+
 export {
   header_en,
   footer_en,
@@ -163,4 +168,5 @@ export {
   logos_en,
   projects_en,
   services_en,
+  stack_en,
 };

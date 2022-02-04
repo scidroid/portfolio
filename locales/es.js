@@ -153,6 +153,11 @@ const services = {
   ],
 };
 
+const stack = {
+  title: "STACK",
+  subtitle: "Lo que uso para hacer un trabajo perfecto",
+};
+
 export {
   header,
   footer,
@@ -163,4 +168,5 @@ export {
   logos,
   projects,
   services,
+  stack,
 };

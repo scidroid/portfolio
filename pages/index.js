@@ -17,8 +17,18 @@ import {
   logos_en,
   projects_en,
   services_en,
+  stack_en,
 } from "locales/en";
-import { hero, blog, awards, logos, projects, services } from "locales/es";
+import {
+  hero,
+  blog,
+  awards,
+  logos,
+  projects,
+  services,
+  stack,
+} from "locales/es";
+import Stack from "components/Stack";
 
 const Index = ({ posts }) => {
   const router = useRouter();
@@ -31,8 +41,9 @@ const Index = ({ posts }) => {
       <Hero locales={selectLocale(hero_en, hero)} />
       <Logos locales={selectLocale(logos_en, logos)} />
       <Services locales={selectLocale(services_en, services)} />
-      <Posts posts={posts} locales={selectLocale(blog_en, blog)} />
       <Projects locales={selectLocale(projects_en, projects)} />
+      <Posts posts={posts} locales={selectLocale(blog_en, blog)} />
+      <Stack locales={selectLocale(stack_en, stack)} />
       <Awards locales={selectLocale(awards_en, awards)} />
     </>
   );
