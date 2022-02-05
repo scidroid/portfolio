@@ -93,7 +93,7 @@ const projects_en = {
     {
       image: "/kindlymap.png",
       title: "KindlyMap",
-      description: `KindlyMap is the most generous map in the world. With just one click, you can help the most important causes for local communities and charities around the world. KindlyMap is a platform that lets you contribute financially to different charities and communities located in different parts of the world.`,
+      description: `Map to search for causes that need help around the world, allowing you to learn more, donate and add your own causes, using Next.js, Deta and PayPal.`,
       tryit: "https://map.scidroid.co/",
       info: "https://devpost.com/software/kindlymap",
       github: "https://github.com/scidroid/maphacks",
@@ -101,7 +101,7 @@ const projects_en = {
     {
       image: "/medisearch.png",
       title: "MediSearch",
-      description: `an AI-assisted symptom and disease checker. With our various AI services, we allow the user to see if they have any dangerous diseases, to then guide them to a specific specialist that will help them further with their diagnosis. This reduces the unguided medical consultations that are very common and helps patients get more info about probable diseases they might suffer.`,
+      description: `A precise disease search engine based on a large amount of medical data and a powerful artificial intelligence, using React.js, Mantine and Infermedica.`,
       tryit: "https://medisearch.scidroid.co/",
       info: "https://devpost.com/software/medisearch/",
       github: "https://github.com/scidroid/medisearch",
@@ -109,7 +109,7 @@ const projects_en = {
     {
       image: "/collegeloans.png",
       title: "CollegeLoans",
-      description: `CollegeLoans is a platform that allows you to do college planning based on your SAT scores and annual income so that you can study without any unforeseen events. It tracks and predicts your debt based on your income and also recommends schools based on your SAT scores.`,
+      description: `Collegeloans is a platform that allows you to search for colleges and plan how to pay for them based on your SAT scores, using React.js, Tailwind and CollegeAI.`,
       tryit: "https://collegeloan.us/",
       info: "https://devpost.com/software/collegeloans/",
       github: "https://github.com/pumasteam/collegeloans",

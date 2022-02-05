@@ -93,7 +93,7 @@ const projects = {
     {
       image: "/kindlymap.png",
       title: "KindlyMap",
-      description: `KindlyMap es el mapa más generoso del mundo. Con un solo clic, puedes ayudar a las causas más importantes para las comunidades locales y organizaciones benéficas de todo el mundo. KindlyMap es una plataforma que te permite contribuir económicamente a diferentes organizaciones benéficas y comunidades ubicadas en diferentes partes del mundo.`,
+      description: `Mapa para buscar causas que necesitan ayuda en todo el mundo, permitiéndote conocer más, donar y añadir tus propias causas, utilizando Next.js, Deta y PayPal.`,
       tryit: "https://map.scidroid.co/",
       info: "https://devpost.com/software/kindlymap",
       github: "https://github.com/scidroid/maphacks",
@@ -101,7 +101,7 @@ const projects = {
     {
       image: "/medisearch.png",
       title: "MediSearch",
-      description: `Un comprobador de síntomas y enfermedades asistido por IA. Con nuestros diversos servicios de IA, permitimos al usuario ver si tiene alguna enfermedad peligrosa, para luego guiarle a un especialista específico que le ayude más en su diagnóstico. Esto reduce las consultas médicas no guiadas que son muy comunes y ayuda a los pacientes a obtener más información sobre las probables enfermedades que podrían padecer.`,
+      description: `Un preciso motor de búsqueda de enfermedades basado en una gran cantidad de datos médicos y una potente inteligencia artificial, utilizando React.js, Mantine e Infermedica.`,
       tryit: "https://medisearch.scidroid.co/",
       info: "https://devpost.com/software/medisearch/",
       github: "https://github.com/scidroid/medisearch",
@@ -109,7 +109,7 @@ const projects = {
     {
       image: "/collegeloans.png",
       title: "CollegeLoans",
-      description: `CollegeLoans es una plataforma que te permite hacer una planificación universitaria en base a tus resultados del SAT y a tus ingresos anuales para que puedas estudiar sin imprevistos. Realiza un seguimiento y una predicción de tu deuda en función de tus ingresos y también te recomienda escuelas en función de tus resultados del SAT.`,
+      description: `Collegeloans es una plataforma que permite buscar universidades y planificar cómo pagarlas en función de tus resultados del SAT, utilizando React.js, Tailwind y CollegeAI.`,
       tryit: "https://collegeloan.us/",
       info: "https://devpost.com/software/collegeloans/",
       github: "https://github.com/pumasteam/collegeloans",
