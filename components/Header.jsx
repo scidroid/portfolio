@@ -98,7 +98,7 @@ const Header = ({ locales }) => {
               English
             </option>
             <option value="es" selected={router.locale == "es" ? true : false}>
-              Spanish
+              Español
             </option>
           </select>
         </section>
