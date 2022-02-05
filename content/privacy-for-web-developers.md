@@ -42,7 +42,7 @@ Plus it allows you to do all this in it's free layer with 2.500 events which als
 
 In this blog we will also learn how to integrate it into your Next.js site so you can use it quickly.
 
-You can [visit their site here](https://slitbee.io).
+You can [visit their site here](https://splitbee.io).
 
 ### Fathom
 
