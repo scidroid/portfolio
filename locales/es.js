@@ -80,7 +80,7 @@ const awards = {
 };
 
 const logos = {
-  title: "Visto en",
+  title: "Destacado en",
 };
 
 const projects = {
@@ -158,6 +158,18 @@ const stack = {
   subtitle: "Lo que uso para hacer un trabajo perfecto",
 };
 
+const about = {
+  title: "ACERCA DE MÍ",
+  content:
+    "A los 9 años tuve mi primer acercamiento a la programación, en un recreo del colegio entré en uno de los ordenadores de la biblioteca y descubrí una web llamada Khan Academy, donde programé mis primeras líneas de javascript. En ese momento para mí eran sólo dibujos, sin saber que iba a ser mi hobby para los próximos años. En diciembre de 2020 retomé la programación y se convirtió en mi pasión.",
+  list: [
+    "Me encanta probar cosas raras todo el tiempo.",
+    "Siempre estoy dispuesto a aprender cosas nuevas.",
+    "He participado en olimpiadas de matemáticas, física, ciencias y astronomía.",
+    "Sí, tengo 14 años.",
+  ],
+};
+
 export {
   header,
   footer,
@@ -169,4 +181,5 @@ export {
   projects,
   services,
   stack,
+  about,
 };

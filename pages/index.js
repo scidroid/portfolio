@@ -5,6 +5,7 @@ import Services from "components/Services";
 import Posts from "components/Posts";
 import Projects from "components/Projects";
 import Awards from "components/Awards";
+import Stack from "components/Stack";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -28,7 +29,6 @@ import {
   services,
   stack,
 } from "locales/es";
-import Stack from "components/Stack";
 
 const Index = ({ posts }) => {
   const router = useRouter();

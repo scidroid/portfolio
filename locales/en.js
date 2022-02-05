@@ -158,6 +158,18 @@ const stack_en = {
   subtitle: "I use the best tools to make the best products",
 };
 
+const about_en = {
+  title: "ABOUT ME",
+  content:
+    "When I was 9 years old I had my first approach to programming, in a break at school I went into one of the computers in the library and discovered a website called Khan Academy, where I programmed my first lines of javascript. At that time for me they were just drawings, without knowing that it was going to be my hobby for the next years. In December 2020 I took up programming again, and it became my passion.",
+  list: [
+    "I love to try weird things all the time.",
+    "I am always willing to learn new things.",
+    "I have participated in math, physics, science and astronomy olympics.",
+    "Yes, I am 14 years old.",
+  ],
+};
+
 export {
   header_en,
   footer_en,
@@ -169,4 +181,5 @@ export {
   projects_en,
   services_en,
   stack_en,
+  about_en,
 };

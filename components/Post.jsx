@@ -1,14 +1,14 @@
-import md from "markdown-it";
+import markdown from "markdown-it";
 import { useEffect, useState } from "react";
 import mediumZoom from "medium-zoom";
 import { Giscus } from "@giscus/react";
 import { NextSeo } from "next-seo";
-const prism = require("prismjs");
-require("prismjs/components/prism-python");
-require("prismjs/components/prism-bash");
-require("prismjs/components/prism-css");
-require("prismjs/components/prism-jsx");
-require("prismjs/components/prism-cshtml");
+import prism from "prismjs";
+import "prismjs/components/prism-python";
+import "prismjs/components/prism-bash";
+import "prismjs/components/prism-css";
+import "prismjs/components/prism-jsx";
+import "prismjs/components/prism-cshtml";
 
 const Post = ({
   frontMatter: { title, date, description, banner, tags },
@@ -18,13 +18,29 @@ const Post = ({
   const [views, setViews] = useState("Loading");
   useEffect(() => {
     prism.highlightAll();
-    mediumZoom("img");
+    mediumZoom("img", {
+      background: "#fff",
+      margin: 48,
+    });
     fetch(`/api/view/${slug}`)
       .then((res) => res.json())
       .then((res) => {
         setViews(res.views);
       });
   }, [slug]);
+
+  const md = markdown();
+
+  md.renderer.rules.image = (tokens, idx, options, env, slf) => {
+    let token = tokens[idx];
+    token.attrs[token.attrIndex("alt")][1] = slf.renderInlineAsText(
+      token.children,
+      options,
+      env
+    );
+    token.attrSet("loading", "lazy");
+    return slf.renderToken(tokens, idx, options);
+  };
 
   return (
     <>
@@ -56,10 +72,10 @@ const Post = ({
           <article className="flex w-5/6 sm:w-4/6 lg:w-3/6 flex-col justify-start m-4">
             <h1 className="mb-4 text-4xl sm:text-6xl font-bold">{title}</h1>
             <p className="text-gray-600 text-2xl">{`${date} - ${views} views`}</p>
-            <article className="prose prose-lg blog-container mb-4">
+            <article className="prose prose-img:m-auto prose-strong:text-center prose prose-a:text-blue-600 prose-xl blog-container mb-4">
               <div
                 dangerouslySetInnerHTML={{
-                  __html: md().render(content),
+                  __html: md.render(content),
                 }}
               />
             </article>

@@ -7,8 +7,8 @@
   "license": "GPL-3.0-or-later",
   "scripts": {
     "start": "next start",
+    "prebuild": "node utils/sitemap.js",
     "build": "next build",
-    "postbuild": "node utils/sitemap.js",
     "dev": "next dev",
     "lint": "next lint",
     "deploy": "vercel"
@@ -25,7 +25,7 @@
     "medium-zoom": "1.0.6",
     "next": "12.0.10",
     "next-seo": "5.1.0",
-    "prismjs": "^1.26.0",
+    "prismjs": "1.26.0",
     "prop-types": "15.8.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
