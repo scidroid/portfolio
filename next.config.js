@@ -1,3 +1,5 @@
+const withPWA = require("next-pwa");
+
 const rewrites = async () => [
   {
     destination: "https://cdn.splitbee.io/sb.js",
@@ -44,7 +46,7 @@ const redirects = async () => {
   ];
 };
 
-module.exports = {
+module.exports = withPWA({
   rewrites,
   redirects,
   images: {
@@ -54,4 +56,7 @@ module.exports = {
     locales: ["en", "es"],
     defaultLocale: "en",
   },
-};
+  pwa: {
+    dest: "public",
+  },
+});
