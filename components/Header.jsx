@@ -74,18 +74,6 @@ const Header = ({ locales }) => {
               {locales.feedback}
             </button>
           </FeedbackFish>
-          <select
-            className="border-none rounded-md pl-1 mr-2 py-1 text-left outline-none bg-white"
-            name="locale"
-            onChange={(e) => handleLocale(e.target.value)}
-          >
-            <option value="en" selected={router.locale == "en" ? true : false}>
-              English
-            </option>
-            <option value="es" selected={router.locale == "es" ? true : false}>
-              Spanish
-            </option>
-          </select>
           <Link href="/contact">
             <a
               onClick={() => trackEvent("contact clicked")}
@@ -101,6 +89,18 @@ const Header = ({ locales }) => {
               />
             </a>
           </Link>
+          <select
+            className="border-none rounded-md font-bold pl-1 mr-2 py-1 text-left outline-none bg-white"
+            name="locale"
+            onChange={(e) => handleLocale(e.target.value)}
+          >
+            <option value="en" selected={router.locale == "en" ? true : false}>
+              English
+            </option>
+            <option value="es" selected={router.locale == "es" ? true : false}>
+              Spanish
+            </option>
+          </select>
         </section>
       </header>
     </div>
