@@ -154,6 +154,10 @@ const RenderResults = () => {
 const Kbar = ({ children }) => {
   const router = useRouter();
 
+  const locales = {
+    locale: router.locale,
+  };
+
   const actions = [
     {
       id: "blog",
@@ -198,7 +202,16 @@ const Kbar = ({ children }) => {
       name: "Learning to code in python",
       shortcut: ["p"],
       keywords: "python code tutorial",
-      perform: () => router.push("/python"),
+      perform: () =>
+        router.push(
+          `/python${
+            router.locale == "es" ? "?return_locale=es" : "?return_locale=en"
+          }`,
+          `/python${
+            router.locale == "es" ? "?return_locale=es" : "?return_locale=en"
+          }`,
+          { locale: "en" }
+        ),
       subtitle: "A guide to learning to code in python",
       icon: (
         <FaPython
@@ -214,7 +227,16 @@ const Kbar = ({ children }) => {
       name: "Learning git",
       shortcut: ["g"],
       keywords: "git commit",
-      perform: () => router.push("/git"),
+      perform: () =>
+        router.push(
+          `/git${
+            router.locale == "es" ? "?return_locale=es" : "?return_locale=en"
+          }`,
+          `/git${
+            router.locale == "es" ? "?return_locale=es" : "?return_locale=en"
+          }`,
+          { locale: "en" }
+        ),
       subtitle: "A guide to learning git",
       icon: (
         <DiGit
@@ -230,7 +252,16 @@ const Kbar = ({ children }) => {
       name: "Our computers run on sand",
       shortcut: ["s"],
       keywords: "silicon sand cs computer",
-      perform: () => router.push("/silicon"),
+      perform: () =>
+        router.push(
+          `/silicon${
+            router.locale == "es" ? "?return_locale=es" : "?return_locale=en"
+          }`,
+          `/silicon${
+            router.locale == "es" ? "?return_locale=es" : "?return_locale=en"
+          }`,
+          { locale: "en" }
+        ),
       subtitle: "A story about our processors",
       icon: (
         <GiProcessor
@@ -246,7 +277,16 @@ const Kbar = ({ children }) => {
       name: "Privacy for web developers",
       shortcut: ["p"],
       keywords: "analytics privacy splitbee",
-      perform: () => router.push("/privacy-for-web-developers"),
+      perform: () =>
+        router.push(
+          `/privacy-for-web-developers${
+            router.locale == "es" ? "?return_locale=es" : "?return_locale=en"
+          }`,
+          `/privacy-for-web-developers${
+            router.locale == "es" ? "?return_locale=es" : "?return_locale=en"
+          }`,
+          { locale: "en" }
+        ),
       subtitle: "Learn about analytics",
       icon: (
         <DiGoogleAnalytics
