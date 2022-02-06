@@ -14,7 +14,7 @@ import { forwardRef, Fragment, useMemo } from "react";
 import { FaPython } from "react-icons/fa";
 import { AiTwotoneContainer } from "react-icons/ai";
 import { BiNews } from "react-icons/bi";
-import { DiGit } from "react-icons/di";
+import { DiGit, DiGoogleAnalytics } from "react-icons/di";
 import { GiProcessor } from "react-icons/gi";
 
 const searchStyle = {
@@ -234,6 +234,22 @@ const Kbar = ({ children }) => {
       subtitle: "A story about our processors",
       icon: (
         <GiProcessor
+          style={{
+            width: "26px",
+            height: "26px",
+          }}
+        />
+      ),
+    },
+    {
+      id: "privacy",
+      name: "Privacy for web developers",
+      shortcut: ["p"],
+      keywords: "analytics privacy splitbee",
+      perform: () => router.push("/privacy-for-web-developers"),
+      subtitle: "Learn about analytics",
+      icon: (
+        <DiGoogleAnalytics
           style={{
             width: "26px",
             height: "26px",
