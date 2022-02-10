@@ -72,7 +72,7 @@ const Post = ({
           <article className="flex w-5/6 sm:w-4/6 lg:w-3/6 flex-col justify-start m-4">
             <h1 className="mb-4 text-4xl sm:text-6xl font-bold">{title}</h1>
             <p className="text-gray-600 text-2xl">{`${date} - ${views} views`}</p>
-            <article className="prose prose-img:m-auto prose-strong:text-center prose prose-a:text-blue-600 prose-xl blog-container mb-4">
+            <article className="prose prose-img:m-auto prose-img:rounded-lg prose-strong:text-center prose prose-a:text-blue-600 prose-xl blog-container mb-4">
               <div
                 dangerouslySetInnerHTML={{
                   __html: md.render(content),
