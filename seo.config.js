@@ -1,5 +1,6 @@
 const defaultSeo_en = {
   title: "Juan Almanza",
+  canonical: "https://scidroid.me",
   description:
     "Juan Almanza A.K.A SciDroid is a 14 year old fullstack web developer, competitive programmer (2nd place at Colombian Computer Olympiad) and serial hackathon winner (winner in 9 of 12 hackathons), specialized in React, Svelte, Python and javascript in general.",
   openGraph: {
@@ -10,10 +11,14 @@ const defaultSeo_en = {
     title: "Juan Almanza",
     description:
       "Juan Almanza A.K.A SciDroid is a 14 year old fullstack web developer, competitive programmer (2nd place at Colombian Computer Olympiad) and serial hackathon winner (winner in 9 of 12 hackathons), specialized in React, Svelte, Python and javascript in general.",
-    image: "https://link.scidroid.me/avatar.png",
-    imageWidth: 400,
-    imageHeight: 400,
-    imageType: "png",
+    images: [
+      {
+        url: "https://link.scidroid.me/avatar.png",
+        width: 400,
+        height: 400,
+        alt: "Juan Almanza",
+      },
+    ],
   },
   twitter: {
     handle: "@scidroid",
@@ -24,6 +29,7 @@ const defaultSeo_en = {
 
 const defaultSeo_es = {
   title: "Juan Almanza",
+  canonical: "https://scidroid.me/es",
   description:
     "Juan Almanza A.K.A SciDroid es un desarrollador web fullstack de 14 años, programador competitivo (2do lugar en la Olimpiada Colombiana de Informática) y ganador serial de hackathones (ganador en 9 de 12 hackathones), especializado en React, Svelte, Python y javascript en general.",
   openGraph: {
@@ -34,10 +40,14 @@ const defaultSeo_es = {
     title: "Juan Almanza",
     description:
       "Juan Almanza A.K.A SciDroid es un desarrollador web fullstack de 14 años, programador competitivo (2do lugar en la Olimpiada Colombiana de Informática) y ganador serial de hackathones (ganador en 9 de 12 hackathones), especializado en React, Svelte, Python y javascript en general.",
-    image: "https://link.scidroid.me/avatar.png",
-    imageWidth: 400,
-    imageHeight: 400,
-    imageType: "png",
+    images: [
+      {
+        url: "https://link.scidroid.me/avatar.png",
+        width: 400,
+        height: 400,
+        alt: "Juan Almanza",
+      },
+    ],
   },
   twitter: {
     handle: "@scidroid",

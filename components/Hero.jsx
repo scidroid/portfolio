@@ -13,7 +13,7 @@ const Hero = ({ locales }) => {
         alt="avatar"
         className="rounded-full"
       />
-      <h1 className="text-5xl sm:text-7xl max-w-3xl m-8 font-bold text-center">
+      <h1 className="text-4xl sm:text-7xl max-w-3xl m-4 sm:m-8 font-bold text-center">
         <span className="hero-gradient-heading">{locales.titlecolor}</span>
         {locales.title}
       </h1>
@@ -27,7 +27,7 @@ const Hero = ({ locales }) => {
             onClick={() => trackEvent("contact clicked")}
             TailwindStyles="mr-8"
           >
-            <p className="font-bold">{locales.contact}</p>
+            <p className="font-bold text-center">{locales.contact}</p>
           </Button>
         </div>
         <div className="block m-2">

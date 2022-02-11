@@ -19,7 +19,7 @@ const Link = ({ href, text }) => {
 const Projects = ({ locales }) => {
   const Project = ({ image, title, description, tryit, info, github }) => {
     return (
-      <article className="m-6 max-w-xs">
+      <article className="mt-2 mb-2 sm:m-6 max-w-xs">
         <Image
           src={image}
           width="320"
@@ -41,7 +41,7 @@ const Projects = ({ locales }) => {
       <h2 className="mr-6 ml-6 mt-6 hero-gradient-heading text-2xl md:text-4xl font-bold">
         {locales.title}
       </h2>
-      <p className="mr-8 ml-8 text-5xl font-bold text-center">
+      <p className="mr-8 ml-8 text-4xl sm:text-5xl font-bold text-center">
         {locales.subtitle}
       </p>
       <section className="m-8 flex flex-wrap flex-row items-center justify-around">

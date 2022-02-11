@@ -1,7 +1,7 @@
 const AwardCard = ({ url, name, subtitle }) => {
   return (
     <a
-      className="w-5/6 flex flex-col items-center justify-center"
+      className="sm:w-5/6 flex flex-col items-center justify-center"
       href={url}
       rel="noopener noreferrer"
     >
@@ -18,7 +18,7 @@ const Awards = ({ locales }) => {
         {locales.title}
       </h2>
       <section className="flex flex-wrap items-center justify-around">
-        <article className="w-4/6 md:w-2/6 flex flex-col items-center justify-start">
+        <article className="sm:w-4/6 md:w-2/6 flex flex-col items-center justify-start">
           <AwardCard
             url={locales.awards[0].url}
             name={locales.awards[0].name}
@@ -35,7 +35,7 @@ const Awards = ({ locales }) => {
             subtitle={locales.awards[2].subtitle}
           />
         </article>
-        <article className="w-4/6 md:w-2/6 flex flex-col items-center justify-start">
+        <article className="sm:w-4/6 md:w-2/6 flex flex-col items-center justify-start">
           <AwardCard
             url={locales.awards[3].url}
             name={locales.awards[3].name}

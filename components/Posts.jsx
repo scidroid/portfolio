@@ -6,9 +6,9 @@ const Posts = ({ posts, locales }) => {
   return (
     <section
       id="blog"
-      className="p-6 bg-black flex flex-row flex-wrap lg:justify-around"
+      className="p-6 bg-black flex flex-row flex-wrap xl:justify-around"
     >
-      <div className="flex flex-col">
+      <div className="flex flex-col mr-4">
         <p className="mt-8 mb-8 hero-gradient-heading text-3xl font-bold">
           BLOG
         </p>

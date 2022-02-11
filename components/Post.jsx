@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import mediumZoom from "medium-zoom";
 import { Giscus } from "@giscus/react";
 import { NextSeo } from "next-seo";
+
 import prism from "prismjs";
 import "prismjs/components/prism-python";
 import "prismjs/components/prism-bash";
@@ -16,12 +17,15 @@ const Post = ({
   slug,
 }) => {
   const [views, setViews] = useState("Loading");
+
   useEffect(() => {
     prism.highlightAll();
+
     mediumZoom("img", {
       background: "#fff",
-      margin: 48,
+      margin: 12,
     });
+
     fetch(`/api/view/${slug}`)
       .then((res) => res.json())
       .then((res) => {
@@ -39,6 +43,7 @@ const Post = ({
       env
     );
     token.attrSet("loading", "lazy");
+    token.attrSet("decoding", "async");
     return slf.renderToken(tokens, idx, options);
   };
 

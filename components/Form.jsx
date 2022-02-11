@@ -9,7 +9,7 @@ const Form = ({ locales }) => {
     <>
       <section className="flex flex-row flex-wrap justify-center m-8 sm:m-32">
         <article className="max-w-lg mt-2 mb-2 mr-4">
-          <h1 className="text-6xl mt-8 mb-16 font-bold">{locales.title}</h1>
+          <h1 className="text-4xl sm:text-6xl sm:mt-8 mb-4 sm:mb-16 font-bold">{locales.title}</h1>
           <p className="text-gray-600 text-xl">{locales.subtitle}</p>
           <a
             className="mt-8 mb-8 flex flex-row items-center"
@@ -21,14 +21,13 @@ const Form = ({ locales }) => {
               width="32"
               height="32"
               className="mr-4"
-            />{" "}
+            />
             <span className="text-xl ml-2 text-gray-600 font-bold">
               scidroid@scidroid.me
             </span>
           </a>
         </article>
         <form
-          autoComplete="on"
           className="max-w-xl w-full flex flex-col"
           onSubmit={(e) => {
             e.preventDefault();
@@ -56,7 +55,7 @@ const Form = ({ locales }) => {
           <div className="flex flex-col mt-2 mb-2">
             <label className="text-xl font-bold mb-2">{locales.name}</label>
             <input
-              className="w-5/6 p-4 text-xl bg-gray-200"
+              className="sm:w-5/6 p-4 text-xl bg-gray-200"
               name="name"
               placeholder={locales.name_placeholder}
               required
@@ -66,7 +65,7 @@ const Form = ({ locales }) => {
           <div className="flex flex-col mt-2 mb-2">
             <label className="text-xl font-bold mb-2">{locales.email}</label>
             <input
-              className="w-5/6 p-4 text-xl bg-gray-200"
+              className="sm:w-5/6 p-4 text-xl bg-gray-200"
               name="email"
               placeholder={locales.email_placeholder}
               required
@@ -76,13 +75,13 @@ const Form = ({ locales }) => {
           <div className="flex flex-col mt-2 mb-2">
             <label className="text-xl font-bold mb-2">{locales.message}</label>
             <textarea
-              className="w-5/6 p-4 text-xl mb-4 bg-gray-200"
+              className="sm:w-5/6 p-4 text-xl mb-4 bg-gray-200"
               name="message"
               placeholder={locales.message_placeholder}
               required
             />
           </div>
-          <button className="button w-3/6 mt-4">
+          <button className="button sm:w-3/6 mt-4">
             <div className="button-up">
               <div className="button-text">
                 <p className="font-bold">{locales.submit}</p>

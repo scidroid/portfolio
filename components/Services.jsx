@@ -6,7 +6,7 @@ const Services = ({ locales }) => {
       <h2 className="mr-6 ml-6 mt-6 hero-gradient-heading text-2xl md:text-4xl font-bold">
         {locales.title}
       </h2>
-      <p className="mr-8 ml-8 text-5xl font-bold text-center">
+      <p className="mr-8 ml-8 text-4xl sm:text-5xl font-bold text-center">
         {locales.subtitle}
       </p>
       <section className="m-8 flex flex-wrap flex-row items-center justify-around">
@@ -27,7 +27,7 @@ const Services = ({ locales }) => {
             </p>
             <ul>
               {service.list.map((item, index) => (
-                <li key={index} className="font-bold text-lg">
+                <li key={index} className="font-bold text-lg mt-2">
                   {item}
                 </li>
               ))}
