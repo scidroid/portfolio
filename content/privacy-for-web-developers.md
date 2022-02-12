@@ -6,6 +6,14 @@ tags: ["Analytics", "Splitbee"]
 banner: "https://s2.loli.net/2022/02/05/JzlbKSC2ZfEyLYp.jpg"
 ---
 
+<details> 
+  
+  <summary>Table of contents</summary>
+
+  [[toc]]
+
+</details>
+
 Privacy on the internet is a serious issue as developers we have the responsibility to respect it, this includes things like using secure communication protocols such as HTTPS as well as how and where you store user information.
 
 But something that many of us don't think about are the analytics, which in some part are sensitive information of our users and around the world there are laws that regulate it, in this article we will talk a little about why analytics can make your site break the law, what alternatives we have, and how we can implement secure analytics on your website.

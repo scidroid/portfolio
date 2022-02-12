@@ -15,13 +15,15 @@
   },
   "dependencies": {
     "@feedback-fish/react": "1.2.1",
-    "@giscus/react": "1.1.1",
-    "@sergeymyssak/nextjs-sitemap": "^2.0.3",
+    "@giscus/react": "1.1.2",
+    "@sergeymyssak/nextjs-sitemap": "2.0.3",
     "@splitbee/web": "0.3.0",
     "animate.css": "4.1.1",
-    "deta": "1.0.1",
+    "deta": "1.0.2",
     "feed": "4.2.2",
     "kbar": "0.1.0-beta.27",
+    "markdown-it-anchor": "^8.4.1",
+    "markdown-it-table-of-contents": "0.6.0",
     "medium-zoom": "1.0.6",
     "next": "12.0.10",
     "next-pwa": "5.4.4",
@@ -33,7 +35,7 @@
     "react-hot-toast": "2.2.0",
     "react-icons": "4.3.1",
     "react-syntax-highlighter": "15.4.5",
-    "sharp": "0.30.0"
+    "sharp": "0.30.1"
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.1",
@@ -43,6 +45,6 @@
     "gray-matter": "4.0.3",
     "markdown-it": "12.3.2",
     "postcss": "8.4.6",
-    "tailwindcss": "3.0.18"
+    "tailwindcss": "3.0.22"
   }
 }

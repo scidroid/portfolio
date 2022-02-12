@@ -6,6 +6,12 @@ tags: ["Git", "Programming"]
 banner: "https://s2.loli.net/2021/12/23/ftEzv1gDspqQmcU.png"
 ---
 
+<details> 
+  <summary>Table of contents</summary>
+  
+  [[toc]]
+</details>
+
 ## What is Git?
 
 Git is a version control system initially created by Linus Torvalds, the same creator of the Linux kernel. Git was born when the Linux kernel used a version control system called BitKeeper, but this was proprietary (or closed source) and when the kernel contributors decided to look at other systems they found that none of the alternatives at the time were sufficient.

@@ -7,6 +7,7 @@ const footer_en = {
   cta: "Ready to make something kickass?",
   ctabtn: "Let's start talking.",
   copyrigth: "© Developed by Juan Almanza under GPL V3 License",
+  privacy: "Privacy Policy",
 };
 
 const hero_en = {

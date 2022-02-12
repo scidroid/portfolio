@@ -3,6 +3,10 @@ import Image from "next/image";
 import { trackEvent } from "utils/analytics";
 
 const Posts = ({ posts, locales }) => {
+  posts = posts.filter(
+    (post) => !post.frontMatter.type && !post.frontMatter.draft
+  );
+
   return (
     <section
       id="blog"

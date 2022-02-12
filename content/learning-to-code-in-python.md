@@ -6,6 +6,12 @@ tags: ["Python", "Programming"]
 banner: "https://s2.loli.net/2021/12/23/U1RKaZXQxS4eAqc.png"
 ---
 
+<details> 
+  <summary>Table of contents</summary>
+
+  [[toc]]
+</details>
+
 ## About Python
 
 Python is a widely-used, interpreted, object-oriented, and high-level programming language with dynamic semantics, used for general-purpose programming. It was created by Guido van Rossum, and first released on February 20, 1991.
@@ -129,7 +135,7 @@ And if everything went correctly you should get the text "Hello World" in the te
 
 ### Comments
 
-In Python a comment is a text that is not executed and is initialized with the # symbol.
+In Python a comment is a text that is not executed and is initialized with the `#` symbol.
 
 This serves us for example to explain what our code does, I'll show you with an example.
 

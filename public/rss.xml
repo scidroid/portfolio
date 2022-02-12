@@ -4,10 +4,26 @@
         <title>Articles by Juan Almanza</title>
         <link>https://scidroid.me</link>
         <description>Cool things I've learned about programming</description>
-        <lastBuildDate>Fri, 11 Feb 2022 01:24:51 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 12 Feb 2022 19:52:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Privacy Policy]]></title>
+            <link>https://scidroid.me/privacy</link>
+            <guid>https://scidroid.me/privacy</guid>
+            <pubDate>Sat, 12 Feb 2022 05:00:00 GMT</pubDate>
+            <description><![CDATA[The information about the privacy of the site]]></description>
+            <author>scidroid@scidroid.me (Juan Almanza)</author>
+        </item>
+        <item>
+            <title><![CDATA[Developing a CRUD in minutes]]></title>
+            <link>https://scidroid.me/crud-with-deta</link>
+            <guid>https://scidroid.me/crud-with-deta</guid>
+            <pubDate>Sat, 12 Feb 2022 05:00:00 GMT</pubDate>
+            <description><![CDATA[Today we are going to implement a CRUD in python using FastAPI and Deta Base making a simple price list.]]></description>
+            <author>scidroid@scidroid.me (Juan Almanza)</author>
+        </item>
         <item>
             <title><![CDATA[Your site is probably illegal.]]></title>
             <link>https://scidroid.me/privacy-for-web-developers</link>

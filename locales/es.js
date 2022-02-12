@@ -7,6 +7,7 @@ const footer = {
   cta: "¿Listo para hacer algo increíble?",
   ctabtn: "Empecemos a hablar.",
   copyrigth: "© Desarrollado por Juan Almanza bajo licencia GPL V3",
+  privacy: "Política de privacidad",
 };
 
 const hero = {

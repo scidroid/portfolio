@@ -39,7 +39,7 @@ const redirects = async () => {
       permanent: true,
     },
     {
-      source: "/privacy",
+      source: "/analytics",
       destination: "/privacy-for-web-developers",
       permanent: true,
     },

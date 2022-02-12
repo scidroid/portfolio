@@ -6,6 +6,12 @@ tags: ["Computer Science", "Computers"]
 banner: "https://s2.loli.net/2021/12/23/RUh5eDKXsijg6Ey.jpg"
 ---
 
+<details> 
+  <summary>Table of contents</summary>
+  
+  [[toc]]
+</details>
+
 ## Sand?
 
 Yes, although it seems incredible what I am saying our economy works with sand. well, not exactly, it is a component of sand called **silicon**.

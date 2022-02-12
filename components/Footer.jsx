@@ -38,7 +38,10 @@ const Footer = ({ locales }) => {
         </Link>
       </section>
       <p className="sm:pl-12 text-gray-400 md:pl-32 md:pr-32 mb-2 text-xl">
-        {locales.copyrigth}
+        {`${locales.copyrigth} - `}
+        <L href="/privacy" locale="en">
+          <a className="underline hover:no-underline">{locales.privacy}</a>
+        </L>
       </p>
     </footer>
   );
