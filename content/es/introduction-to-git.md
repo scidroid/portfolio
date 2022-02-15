@@ -1,15 +1,21 @@
 ---
-title: 'Una introducción a Git'
-date: 'Junio 9, 2021'
-description: 'Git nos permite gestionar, distribuir y colaborar en nuestro código para que esté organizado y haya un flujo de trabajo eficiente al programar con varias personas, también nos ayudará a hacer cosas como volver a versiones anteriores de nuestro proyecto.'
-tags: ['Git', 'Programación']
-banner: 'https://s2.loli.net/2021/12/23/ftEzv1gDspqQmcU.png'
+title: Una introducción a Git
+date: Junio 9, 2021
+description: Git nos permite gestionar, distribuir y colaborar en nuestro código
+  para que esté organizado y haya un flujo de trabajo eficiente al programar con
+  varias personas, también nos ayudará a hacer cosas como volver a versiones
+  anteriores de nuestro proyecto.
+tags:
+  - Git
+  - Programación
+banner: https://s2.loli.net/2021/12/23/ftEzv1gDspqQmcU.png
+draft: "false"
+type: blog
 ---
-
 <details> 
   <summary>Tabla de contenidos</summary>
   
-  [[toc]]
+  \[[toc]]
 </details>
 
 ## ¿Qué es Git?
@@ -79,3 +85,5 @@ git commit -m "mensaje"
 ```
 
 Y si todo ha ido bien, enhorabuena has hecho tu primer commit, ahora sigue aprendiendo porque git es una herramienta esencial en el desarrollo.
+
+Gracias por leer.
