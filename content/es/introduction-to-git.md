@@ -13,9 +13,9 @@ draft: "false"
 type: blog
 ---
 
-<details> 
+<details>
   <summary>Tabla de contenidos</summary>
-  
+
   \[[toc]]
 </details>
 
