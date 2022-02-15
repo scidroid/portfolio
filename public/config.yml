@@ -37,6 +37,6 @@ collections:
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Tags', name: 'tags', widget: 'text' }
       - { label: 'Banner', name: 'banner', widget: 'image' }
-      - { label: 'Draft', name: 'draft', widget: 'text' }
-      - { label: 'Type', name: 'type', widget: 'text' }
+      - { required: 'false', label: 'Draft', name: 'draft', widget: 'text' }
+      - { required: 'false', label: 'Type', name: 'type', widget: 'text' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
