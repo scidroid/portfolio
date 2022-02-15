@@ -1,7 +1,8 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": ["next/core-web-vitals", "standard"],
   "rules": {
-    "react/display-name": "off",
-    "@next/next/no-html-link-for-pages": "off"
+    "semi": "off",
+    "eqeqeq": "off",
+    "multiline-ternary": "off"
   }
 }

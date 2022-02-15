@@ -1,8 +1,8 @@
 ---
-title: "Privacy Policy"
-type: "page"
-description: "The information about the privacy of the site"
-date: "Febraury 12, 2022"
+title: 'Privacy Policy'
+type: 'page'
+description: 'The information about the privacy of the site'
+date: 'Febraury 12, 2022'
 ---
 
 Your privacy is important to us. It is SciDroid's policy to respect your privacy and comply with any applicable law and regulation regarding any personal information we may collect about you, including across our website, [https://scidroid.me](https://scidroid.me), and other sites we own and operate.

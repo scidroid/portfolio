@@ -1,27 +1,32 @@
-const { configureSitemap } = require("@sergeymyssak/nextjs-sitemap");
-const { readdirSync } = require("fs");
-const { join } = require("path");
+const { configureSitemap } = require('@sergeymyssak/nextjs-sitemap');
+const { readdirSync } = require('fs');
+const { join } = require('path');
 
-async function fetchDynamicPaths() {
-  return readdirSync(join("content"));
+async function fetchDynamicPaths () {
+  const paths = [
+    ...readdirSync(join('content', 'en')),
+    ...readdirSync(join('content', 'es'))
+  ];
+
+  return paths;
 }
 
-async function getDynamicPaths() {
+async function getDynamicPaths () {
   const paths = await fetchDynamicPaths();
 
-  return paths.map((item) => `/${item.substring(0, item.length - 3)}`);
+  return paths.map(item => `/${item.substring(0, item.length - 3)}`);
 }
 
-const dir_name = __dirname.substring(0, __dirname.lastIndexOf("/"));
+const dirName = __dirname.substring(0, __dirname.lastIndexOf('/'));
 
-getDynamicPaths().then((paths) => {
+getDynamicPaths().then(paths => {
   const Sitemap = configureSitemap({
-    domains: [{ domain: "scidroid.me", locales: ["en", "es"] }],
+    domains: [{ domain: 'scidroid.me', locales: ['en', 'es'] }],
     include: paths,
     excludeIndex: true,
     trailingSlash: true,
-    targetDirectory: dir_name + "public",
-    pagesDirectory: dir_name + "pages",
+    targetDirectory: dirName + 'public',
+    pagesDirectory: dirName + 'pages'
   });
 
   Sitemap.generateSitemap();

@@ -1,4 +1,4 @@
-import { Deta } from "deta";
+import { Deta } from 'deta';
 
 const deta = Deta(process.env.DETA_KEY);
 
@@ -8,7 +8,7 @@ const view = async (req, res) => {
   const { id } = req.query;
   await base.put({ id: id });
   const resp = await base.fetch();
-  const views = resp.items.filter((response) => response.id === id);
+  const views = resp.items.filter(response => response.id === id);
   res.status(200).json({ views: views.length });
 };
 

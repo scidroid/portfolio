@@ -1,0 +1,42 @@
+backend:
+  name: github
+  repo: scidroid/portfolio
+  branch: main
+  base_url: https://scidroid.me
+  auth_endpoint: api/auth
+publish_mode: editorial_workflow
+display_url: https://scidroid.me
+logo_url: https://scidroid.me/avatar.png
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 624de14caf2cf3c7f75c
+collections:
+  - name: 'pages_en'
+    label: 'Pages in english'
+    folder: 'content/en'
+    create: true
+    slug: '{{title}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'text' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Tags', name: 'tags', widget: 'text' }
+      - { label: 'Banner', name: 'banner', widget: 'image' }
+      - { label: 'Draft', name: 'draft', widget: 'text' }
+      - { label: 'Type', name: 'type', widget: 'text' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'pages_es'
+    label: 'Pages in spanish'
+    folder: 'content/es'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'text' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Tags', name: 'tags', widget: 'text' }
+      - { label: 'Banner', name: 'banner', widget: 'image' }
+      - { label: 'Draft', name: 'draft', widget: 'text' }
+      - { label: 'Type', name: 'type', widget: 'text' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }

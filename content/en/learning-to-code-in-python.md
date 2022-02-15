@@ -1,15 +1,16 @@
 ---
-title: "Learning to code in Python: The Basics"
-date: "March 30, 2021"
-description: "Learn to program in Python, a high-level, interpreted, multi-paradigm language used for Web with Flask and Django, Artificial Intelligence and Data Science."
-tags: ["Python", "Programming"]
-banner: "https://s2.loli.net/2021/12/23/U1RKaZXQxS4eAqc.png"
+title: 'Learning to code in Python: The Basics'
+date: 'March 30, 2021'
+description: 'Learn to program in Python, a high-level, interpreted, multi-paradigm language used for Web with Flask and Django, Artificial Intelligence and Data Science.'
+tags: ['Python', 'Programming']
+banner: 'https://s2.loli.net/2021/12/23/U1RKaZXQxS4eAqc.png'
 ---
 
 <details> 
   <summary>Table of contents</summary>
 
-  [[toc]]
+[[toc]]
+
 </details>
 
 ## About Python
@@ -90,7 +91,7 @@ If you get an error in any operating system try to reinstall Python.
 
 ```console
 C:\Users\SciDroid>python Python 3.10.1 (tags/v3.10.1:2cd268a, Dec 6 2021, 19:10:37)
-[MSC v.1929 64 bit (AMD64)] on win32 Type "help", "copyright" "credits" or "license" for more information. 
+[MSC v.1929 64 bit (AMD64)] on win32 Type "help", "copyright" "credits" or "license" for more information.
 
 >>>
 ```

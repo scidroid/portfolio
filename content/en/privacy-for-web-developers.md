@@ -1,16 +1,16 @@
 ---
-title: "Your site is probably illegal."
-date: "February 4, 2022"
+title: 'Your site is probably illegal.'
+date: 'February 4, 2022'
 description: "Many people think of website analytics as just another add-on. But it's much more complex than that. Learn how to make analytics protect the privacy of your users and learn how to do it easily."
-tags: ["Analytics", "Splitbee"]
-banner: "https://s2.loli.net/2022/02/05/JzlbKSC2ZfEyLYp.jpg"
+tags: ['Analytics', 'Splitbee']
+banner: 'https://s2.loli.net/2022/02/05/JzlbKSC2ZfEyLYp.jpg'
 ---
 
 <details> 
   
   <summary>Table of contents</summary>
 
-  [[toc]]
+[[toc]]
 
 </details>
 
@@ -76,7 +76,7 @@ And finally, you can also use a tool like [Matomo](https://matomo.org/), which i
 
 ## Implementing Splitbee in a Next.js site
 
-Now let's make a small Splitbee example in Next.js. 
+Now let's make a small Splitbee example in Next.js.
 
 Before we start we just need to create an account, you can go directly by [clicking here](https://app.splitbee.io/).
 
@@ -99,39 +99,43 @@ yarn add @splitbee/web
 
 npm install @splitbee/web
 ```
+
 Now we will use one of the functions of Next that will allow us to make a kind of proxy by allowing us to make routes in our site that redirect to another part, in this case we will do it to store the script and the endpoint of the API in our own site.
+
 ```javascript
 // next.config.js
 
 const rewrites = async () => {
   return [
     {
-      source: "/sb.js",
-      destination: "https://cdn.splitbee.io/sb.js",
+      source: '/sb.js',
+      destination: 'https://cdn.splitbee.io/sb.js'
     },
     {
-      source: "/_hive/:slug",
-      destination: "https://hive.splitbee.io/:slug",
-    },
+      source: '/_hive/:slug',
+      destination: 'https://hive.splitbee.io/:slug'
+    }
   ];
 };
 
 modules.exports = {
-  rewrites,
+  rewrites
 };
 ```
-Now we will create a special Next file that will allow us to add the Splitbee script to all the pages of our site. 
+
+Now we will create a special Next file that will allow us to add the Splitbee script to all the pages of our site.
+
 ```jsx
 // pages/_app.js
 
-import { useEffect } from "react";
-import splitbee from "@splitbee/web";
+import { useEffect } from 'react';
+import splitbee from '@splitbee/web';
 
 const App = ({ Component, pageProps }) => {
   useEffect(() => {
     splitbee.init({
-      scriptUrl: "/sb.js",
-      apiUrl: "/_hive",
+      scriptUrl: '/sb.js',
+      apiUrl: '/_hive'
     });
   });
 
@@ -140,6 +144,7 @@ const App = ({ Component, pageProps }) => {
 
 export default App;
 ```
+
 And now we have everything ready, and with this we can have statistics of visitors to our site, including the countries from which they visit us, the number of views, even from what website our users came from.
 
 And if we visit our Splitbee panel we will be able to see something like this.
@@ -161,7 +166,7 @@ In the second function we will be able to add parameters to the users, for examp
 ```javascript
 // utils/analytics.js
 
-import splitbee from "@splitbee/web";
+import splitbee from '@splitbee/web';
 
 // Events
 const trackEvent = (event, details) => splitbee.track(event, details);
@@ -170,40 +175,42 @@ const trackEvent = (event, details) => splitbee.track(event, details);
 const setUser = (name, email) =>
   splitbee.user.set({
     name,
-    email,
+    email
   });
 ```
+
 And this can be implemented in different ways, here are some examples:
 
 #### Record event at button press
 
 ```jsx
-import { trackEvent } from "utils/analytics";
+import { trackEvent } from 'utils/analytics';
 
 const ButtonWithEvent = ({ name, children }) => {
   return (
-    <button onClick={(() => trackEvent("Button clicked"), { id: name })}>
+    <button onClick={(() => trackEvent('Button clicked'), { id: name })}>
       {children}
     </button>
   );
 };
 ```
+
 #### Define user when filling out a form
 
 ```jsx
-import { setUser } from "utils/analytics";
+import { setUser } from 'utils/analytics';
 
 const SignUpForm = () => {
   return (
     <form onSubmit={() => setUser(name, email)}>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <input type="submit" />
+      <input type='text' name='name' />
+      <input type='email' name='email' />
+      <input type='submit' />
     </form>
   );
 };
 ```
+
 In the end, by mixing events and setting user data we can have very complete navigation statistics as seen below.
 
 ![Splitbee user dashboard](https://s2.loli.net/2022/02/05/qhogI2cW8i1bYfH.png)
-

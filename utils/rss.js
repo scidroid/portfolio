@@ -1,31 +1,31 @@
-import { Feed } from "feed";
-import { writeFileSync } from "fs";
+import { Feed } from 'feed';
+import { writeFileSync } from 'fs';
 
-const generateRSS = (articles) => {
-  const baseURL = "https://scidroid.me";
+const generateRSS = articles => {
+  const baseURL = 'https://scidroid.me';
   const author = {
-    name: "Juan Almanza",
-    email: "scidroid@scidroid.me",
-    link: "https://twitter.com/scidroid",
+    name: 'Juan Almanza',
+    email: 'scidroid@scidroid.me',
+    link: 'https://twitter.com/scidroid'
   };
 
   const feed = new Feed({
-    title: "Articles by Juan Almanza",
+    title: 'Articles by Juan Almanza',
     description: "Cool things I've learned about programming",
     id: baseURL,
     link: baseURL,
-    language: "en",
+    language: 'en',
     feedLinks: {
-      rss2: `${baseURL}/feed.rss`,
+      rss2: `${baseURL}/feed.rss`
     },
-    author,
+    author
   });
 
-  articles.forEach((article) => {
+  articles.forEach(article => {
     const {
       mdxSource,
       frontMatter: { title, date, description, tags },
-      slug,
+      slug
     } = article;
     const url = `${baseURL}/${slug}`;
     feed.addItem({
@@ -36,11 +36,11 @@ const generateRSS = (articles) => {
       description,
       author: [author],
       date: new Date(date),
-      content: mdxSource,
+      content: mdxSource
     });
   });
 
-  writeFileSync("public/rss.xml", feed.rss2());
+  writeFileSync('public/rss.xml', feed.rss2());
 };
 
 export default generateRSS;

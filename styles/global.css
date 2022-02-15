@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "jakarta-sans";
-  src: url("/fonts/PlusJakartaSans-Regular.woff2") format("woff2");
+  font-family: 'jakarta-sans';
+  src: url('/fonts/PlusJakartaSans-Regular.woff2') format('woff2');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "jakarta-sans";
-  src: url("/fonts/PlusJakartaSans-Bold.woff2") format("woff2");
+  font-family: 'jakarta-sans';
+  src: url('/fonts/PlusJakartaSans-Bold.woff2') format('woff2');
   font-style: bold;
   font-weight: 800;
   font-display: swap;
 }
 
 body {
-  font-family: "jakarta-sans", sans-serif;
+  font-family: 'jakarta-sans', sans-serif;
 }
 
 .padding-b {

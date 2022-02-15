@@ -1,67 +1,54 @@
 // Excuse me, the code is a shit
-import Hero from "components/Hero";
-import Logos from "components/Logos";
-import Services from "components/Services";
-import Posts from "components/Posts";
-import Projects from "components/Projects";
-import Awards from "components/Awards";
-import Stack from "components/Stack";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import generateRSS from "utils/rss";
-import { useRouter } from "next/router";
-import {
-  hero_en,
-  blog_en,
-  awards_en,
-  logos_en,
-  projects_en,
-  services_en,
-  stack_en,
-} from "locales/en";
-import {
-  hero,
-  blog,
-  awards,
-  logos,
-  projects,
-  services,
-  stack,
-} from "locales/es";
+import Hero from 'components/Hero';
+import Logos from 'components/Logos';
+import Services from 'components/Services';
+import Posts from 'components/Posts';
+import Projects from 'components/Projects';
+import Awards from 'components/Awards';
+import Stack from 'components/Stack';
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+import generateRSS from 'utils/rss';
+import { useTranslation } from 'utils/locales';
 
 const Index = ({ posts }) => {
-  const router = useRouter();
-  const selectLocale = (en, es) => {
-    return router.locale == "en" ? en : es;
-  };
+  const {
+    hero,
+    blog,
+    awards,
+    logos,
+    projects,
+    services,
+    stack
+  } = useTranslation();
 
   return (
     <>
-      <Hero locales={selectLocale(hero_en, hero)} />
-      <Logos locales={selectLocale(logos_en, logos)} />
-      <Services locales={selectLocale(services_en, services)} />
-      <Projects locales={selectLocale(projects_en, projects)} />
-      <Posts posts={posts} locales={selectLocale(blog_en, blog)} />
-      <Stack locales={selectLocale(stack_en, stack)} />
-      <Awards locales={selectLocale(awards_en, awards)} />
+      <Hero locales={hero} />
+      <Logos locales={logos} />
+      <Services locales={services} />
+      <Projects locales={projects} />
+      <Posts posts={posts} locales={blog} />
+      <Stack locales={stack} />
+      <Awards locales={awards} />
     </>
   );
 };
 
-export const getStaticProps = async () => {
-  const files = fs.readdirSync(path.join("content"));
+export const getStaticProps = async ({ locale }) => {
+  const files = fs.readdirSync(path.join('content', locale));
 
-  const posts = files.map((filename) => {
+  const posts = files.map(filename => {
     const markdownWithMeta = fs.readFileSync(
-      path.join("content", filename),
-      "utf-8"
+      path.join('content', locale, filename),
+      'utf-8'
     );
     const { data: frontMatter } = matter(markdownWithMeta);
 
     return {
       frontMatter,
-      slug: filename.split(".")[0],
+      slug: filename.split('.')[0]
     };
   });
 
@@ -73,8 +60,8 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      posts,
-    },
+      posts
+    }
   };
 };
 

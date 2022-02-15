@@ -1,10 +1,10 @@
 for (let page = 0; page < 34; page++) {
-  fetch("https://rickandmortyapi.com/api/character/?page="+page)
-    .then((res) => res.json())
-    .then((res) => {
+  fetch('https://rickandmortyapi.com/api/character/?page=' + page)
+    .then(res => res.json())
+    .then(res => {
       for (let index = 0; index < 20; index++) {
-        document.querySelector("#container").insertAdjacentHTML(
-          "beforeend",
+        document.querySelector('#container').insertAdjacentHTML(
+          'beforeend',
           `
             <article>
               <img src="${res.results[index].image}">
@@ -14,6 +14,5 @@ for (let page = 0; page < 34; page++) {
           `
         );
       }
-    }
-  );
-};
+    });
+}

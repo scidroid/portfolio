@@ -1,9 +1,9 @@
 ---
-title: "Developing a CRUD in minutes"
-date: "February 12, 2022"
-description: "Today we are going to implement a CRUD in python using FastAPI and Deta Base making a simple price list."
-tags: ["Deta", "Programming"]
-banner: "https://s2.loli.net/2022/02/12/mY7HvdAuJthzF5k.png"
+title: 'Developing a CRUD in minutes'
+date: 'February 12, 2022'
+description: 'Today we are going to implement a CRUD in python using FastAPI and Deta Base making a simple price list.'
+tags: ['Deta', 'Programming']
+banner: 'https://s2.loli.net/2022/02/12/mY7HvdAuJthzF5k.png'
 draft: true
 ---
 

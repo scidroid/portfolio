@@ -1,9 +1,9 @@
 ---
-title: "Our computers run on sand, a post about silicon."
-date: "January 16, 2021"
-description: "Yes, although it seems incredible what I am saying our economy works with sand. well, not exactly, it is a component of sand called silicon."
-tags: ["Computer Science", "Computers"]
-banner: "https://s2.loli.net/2021/12/23/RUh5eDKXsijg6Ey.jpg"
+title: 'Our computers run on sand, a post about silicon.'
+date: 'January 16, 2021'
+description: 'Yes, although it seems incredible what I am saying our economy works with sand. well, not exactly, it is a component of sand called silicon.'
+tags: ['Computer Science', 'Computers']
+banner: 'https://s2.loli.net/2021/12/23/RUh5eDKXsijg6Ey.jpg'
 ---
 
 <details> 

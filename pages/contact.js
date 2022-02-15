@@ -1,20 +1,13 @@
-import { NextSeo } from "next-seo";
-import Form from "components/Form";
-import { contact_en } from "locales/en";
-import { contact } from "locales/es";
-import { useRouter } from "next/router";
+import { NextSeo } from 'next-seo';
+import Form from 'components/Form';
+import { useTranslation } from 'utils/locales';
 
 const Contact = () => {
-  const router = useRouter();
-
+  const { contact } = useTranslation();
   return (
     <>
-      <NextSeo
-        title={`${
-          router.locale == "en" ? "Contact" : "Contactame"
-        } | Juan Almanza `}
-      />
-      <Form locales={router.locale == "en" ? contact_en : contact} />
+      <NextSeo title={`${contact.title} | Juan Almanza `} />
+      <Form locales={contact} />
     </>
   );
 };

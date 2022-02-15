@@ -1,33 +1,15 @@
-import Header from "components/Header";
-import Footer from "components/Footer";
-import { useRouter } from "next/router";
-import { header, footer } from "locales/es";
-import { header_en, footer_en } from "locales/en";
+import Header from 'components/Header';
+import Footer from 'components/Footer';
+import { useTranslation } from 'utils/locales';
 
 const Layout = ({ children }) => {
-  const router = useRouter();
+  const { header, footer } = useTranslation();
 
-  const { return_locale } = router.query;
-
-  const selectLocaleWithFallback = (en, es) => {
-    if (return_locale == "en") {
-      return en;
-    } else if (return_locale == "es") {
-      return es;
-    } else {
-      if (router.locale == "en") {
-        return en;
-      } else {
-        return es;
-      }
-    }
-  };
-  
   return (
     <>
-      <Header locales={selectLocaleWithFallback(header_en, header)} />
+      <Header locales={header} />
       <main>{children}</main>
-      <Footer locales={selectLocaleWithFallback(footer_en, footer)} />
+      <Footer locales={footer} />
     </>
   );
 };
