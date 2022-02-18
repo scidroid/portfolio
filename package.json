@@ -12,7 +12,6 @@
     "dev": "next dev",
     "lint": "next lint",
     "format": "prettier-standard --format",
-    "postformat": "eslint * --fix",
     "deploy": "vercel"
   },
   "dependencies": {
