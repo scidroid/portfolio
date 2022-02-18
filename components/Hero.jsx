@@ -34,7 +34,7 @@ const Hero = ({ locales }) => {
           <a
             onClick={() => trackEvent('Resume viewved')}
             className='text-lg font-bold'
-            href='/resume.pdf'
+            href='https://cv.scidroid.co'
           >
             {locales.cv}
             <Image

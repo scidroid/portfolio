@@ -28,10 +28,10 @@
     "markdown-it-table-of-contents": "0.6.0",
     "medium-zoom": "1.0.6",
     "netlify-cms-oauth-provider-node": "2.0.0",
-    "next": "12.0.10",
+    "next": "12.1.0",
     "next-pwa": "5.4.4",
     "next-seo": "5.1.0",
-    "prismjs": "1.26.0",
+    "prismjs": "1.27.0",
     "prop-types": "15.8.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -44,7 +44,7 @@
     "@tailwindcss/typography": "0.5.2",
     "autoprefixer": "10.4.2",
     "eslint": "8.9.0",
-    "eslint-config-next": "12.0.10",
+    "eslint-config-next": "12.1.0",
     "eslint-config-standard": "16.0.3",
     "eslint-plugin-import": "2.25.4",
     "eslint-plugin-n": "14.0.0",
@@ -54,6 +54,6 @@
     "markdown-it": "12.3.2",
     "postcss": "8.4.6",
     "prettier-standard": "16.4.1",
-    "tailwindcss": "3.0.22"
+    "tailwindcss": "3.0.23"
   }
 }
