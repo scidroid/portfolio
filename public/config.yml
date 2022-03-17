@@ -2,11 +2,11 @@ backend:
   name: github
   repo: scidroid/portfolio
   branch: main
-  base_url: https://scidroid.me
+  base_url: https://scidroid.co
   auth_endpoint: api/auth
 publish_mode: editorial_workflow
-display_url: https://scidroid.me
-logo_url: https://scidroid.me/avatar.png
+display_url: https://scidroid.co
+logo_url: https://scidroid.co/avatar.png
 media_library:
   name: uploadcare
   config:

@@ -5,7 +5,7 @@ description: 'La información sobre la privacidad del sitio'
 date: 'Febrero 12, 2022'
 ---
 
-Su privacidad es importante para nosotros. La política de SciDroid busca respetar su privacidad y cumplir con cualquier ley y regulación aplicable en relación con la información personal que podamos recoger sobre usted a través de nuestro sitio web, [https://scidroid.me](https://scidroid.me), y otros sitios que poseemos y operamos.
+Su privacidad es importante para nosotros. La política de SciDroid busca respetar su privacidad y cumplir con cualquier ley y regulación aplicable en relación con la información personal que podamos recoger sobre usted a través de nuestro sitio web, [https://scidroid.co](https://scidroid.co), y otros sitios que poseemos y operamos.
 
 Esta política es efectiva a partir del 12 de febrero de 2022 y fue actualizada por última vez el 12 de febrero de 2022.
 
@@ -112,6 +112,6 @@ Para cualquier pregunta o duda sobre su privacidad, puede ponerse en contacto co
 
 **Juan Almanza**
 <br />
-[scidroid@scidroid.me](mailto:scidroid@scidroid.me?subject=I%20have%20a%20question%20about%20your%20privacy%20police&body=Hi%2C%20I%20am%20%7Byour%20name%7D%2C%0D%0A%0D%0A...)
+[scidroid@scidroid.co](mailto:scidroid@scidroid.co?subject=I%20have%20a%20question%20about%20your%20privacy%20police&body=Hi%2C%20I%20am%20%7Byour%20name%7D%2C%0D%0A%0D%0A...)
 <br />
-[https://scidroid.me/contact](https://scidroid.me/contact)
+[https://scidroid.co/contact](https://scidroid.co/contact)

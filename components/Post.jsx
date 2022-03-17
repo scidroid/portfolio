@@ -60,11 +60,11 @@ const Post = ({
       <NextSeo
         title={`${title} | Juan Almanza`}
         description={description}
-        canonical={`https://scidroid.me/${slug}`}
+        canonical={`https://scidroid.co/${slug}`}
         openGraph={{
           title: `${title} | Juan Almanza`,
           description: description,
-          url: `https://scidroid.me/${slug}`,
+          url: `https://scidroid.co/${slug}`,
           images: [
             {
               url: banner,

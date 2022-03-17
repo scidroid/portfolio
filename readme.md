@@ -41,11 +41,11 @@ yarn global add vercel
 vercel
 ```
 
-> Yes, is a Vercel reference, if you are an Vercel (or from any other company) recruier i'm open to work if you have an huge salarie, we can talk about it in [our metting tomorrow](mailto:scidroid@scidroid.me?cc=scidroidgames@gmail.com&subject=Hi%2C%20I%20have%20an%20amazing%20oportunity%20for%20you).
+> Yes, is a Vercel reference, if you are an Vercel (or from any other company) recruier i'm open to work if you have an huge salarie, we can talk about it in [our metting tomorrow](mailto:scidroid@scidroid.co?cc=scidroidgames@gmail.com&subject=Hi%2C%20I%20have%20an%20amazing%20oportunity%20for%20you).
 
 ## Author
 
-👤 **SciDroid <scidroid@scidroid.me>**
+👤 **SciDroid <scidroid@scidroid.co>**
 
 - Website: [scidroid.co](https://scidroid.co)
 - Twitter: [@scidroid](https://twitter.com/scidroid)

@@ -48,7 +48,7 @@ To start executing commands we are going to create a code example, in this case 
     <ul>
       <li>Be a superhero</li>
       <li>Buy a Mansion with my junior salary</li>
-      <li>visit the <a href="https://scidroid.me">SciDroid's Web</a></li>
+      <li>visit the <a href="https://scidroid.co">SciDroid's Web</a></li>
     </ul>
   </body>
 </html>

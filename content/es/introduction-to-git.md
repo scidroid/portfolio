@@ -50,7 +50,7 @@ Para empezar a ejecutar los comandos vamos a crear un código de ejemplo, en est
     <ul>
       <li>Ser un superhéroe</li>
       <li>Comprar una mansión con mi sueldo de junior</li>
-      <li>Visitar el <a href="https://scidroid.me">sitio de SciDroid</a></li>
+      <li>Visitar el <a href="https://scidroid.co">sitio de SciDroid</a></li>
     </ul>
   </body>
 </html>

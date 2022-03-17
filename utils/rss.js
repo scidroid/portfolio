@@ -2,10 +2,10 @@ import { Feed } from 'feed';
 import { writeFileSync } from 'fs';
 
 const generateRSS = articles => {
-  const baseURL = 'https://scidroid.me';
+  const baseURL = 'https://scidroid.co';
   const author = {
     name: 'Juan Almanza',
-    email: 'scidroid@scidroid.me',
+    email: 'scidroid@scidroid.co',
     link: 'https://twitter.com/scidroid'
   };
 

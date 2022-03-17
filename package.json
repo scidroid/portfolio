@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My portfolio",
   "repository": "https://github.com/scidroid/portfolio.git",
-  "author": "SciDroid <scidroid@scidroid.me>",
+  "author": "SciDroid <scidroid@scidroid.co>",
   "license": "GPL-3.0-or-later",
   "scripts": {
     "start": "next start",

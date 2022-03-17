@@ -21,7 +21,7 @@ const dirName = __dirname.substring(0, __dirname.lastIndexOf('/'));
 
 getDynamicPaths().then(paths => {
   const Sitemap = configureSitemap({
-    domains: [{ domain: 'scidroid.me', locales: ['en', 'es'] }],
+    domains: [{ domain: 'scidroid.co', locales: ['en', 'es'] }],
     include: paths,
     excludeIndex: true,
     trailingSlash: true,
