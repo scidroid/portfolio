@@ -17,7 +17,7 @@ const App = ({ Component, pageProps }) => {
     splitbee.init({
       apiUrl: '/sb-api',
       scriptUrl: '/sb.js',
-      token: 'DZ3045G6X7O8'
+      token: 'MR5NSGK0EU6C'
     });
   }, []);
 
