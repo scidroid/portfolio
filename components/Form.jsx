@@ -15,7 +15,7 @@ const Form = ({ locales }) => {
           <p className='text-gray-600 text-xl'>{locales.subtitle}</p>
           <a
             className='mt-8 mb-8 flex flex-row items-center'
-            href='mailto:scidroid@scidroid.co?cc=scidroidgames@gmail.com&subject=Hi%2C%20I%20have%20an%20amazing%20oportunity%20for%20you'
+            href='mailto:hi@scidroid.co?cc=scidroidgames@gmail.com&subject=Hi%2C%20I%20have%20an%20amazing%20oportunity%20for%20you'
           >
             <Image
               alt='mail logo'
@@ -25,7 +25,7 @@ const Form = ({ locales }) => {
               className='mr-4'
             />
             <span className='text-xl ml-2 text-gray-600 font-bold'>
-              scidroid@scidroid.co
+              hi@scidroid.co
             </span>
           </a>
         </article>

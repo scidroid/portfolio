@@ -112,6 +112,6 @@ For any questions or concerns regarding your privacy, you may contact us using t
 
 **Juan Almanza**
 <br />
-[scidroid@scidroid.co](mailto:scidroid@scidroid.co?subject=I%20have%20a%20question%20about%20your%20privacy%20police&body=Hi%2C%20I%20am%20%7Byour%20name%7D%2C%0D%0A%0D%0A...)
+[hi@scidroid.co](mailto:hi@scidroid.co?subject=I%20have%20a%20question%20about%20your%20privacy%20police&body=Hi%2C%20I%20am%20%7Byour%20name%7D%2C%0D%0A%0D%0A...)
 <br />
 [https://scidroid.co/contact](https://scidroid.co/contact)

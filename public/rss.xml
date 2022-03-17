@@ -14,7 +14,7 @@
             <guid>https://scidroid.co/privacy</guid>
             <pubDate>Sat, 12 Feb 2022 05:00:00 GMT</pubDate>
             <description><![CDATA[La información sobre la privacidad del sitio]]></description>
-            <author>scidroid@scidroid.co (Juan Almanza)</author>
+            <author>hi@scidroid.co (Juan Almanza)</author>
         </item>
         <item>
             <title><![CDATA[Nuestros ordenadores funcionan con arena]]></title>
@@ -22,7 +22,7 @@
             <guid>https://scidroid.co/our-computers-runs-on-sand</guid>
             <pubDate>Invalid Date</pubDate>
             <description><![CDATA[Sí, aunque parezca increíble lo que estoy diciendo nuestra economía funciona con arena. bueno, no exactamente, es un componente de la arena llamado silicio]]></description>
-            <author>scidroid@scidroid.co (Juan Almanza)</author>
+            <author>hi@scidroid.co (Juan Almanza)</author>
         </item>
         <item>
             <title><![CDATA[Desarrollando un CRUD en minutos]]></title>
@@ -30,7 +30,7 @@
             <guid>https://scidroid.co/crud-with-deta</guid>
             <pubDate>Sat, 12 Feb 2022 05:00:00 GMT</pubDate>
             <description><![CDATA[Hoy vamos a implementar un CRUD en python usando FastAPI y Deta Base haciendo una simple lista de precios.]]></description>
-            <author>scidroid@scidroid.co (Juan Almanza)</author>
+            <author>hi@scidroid.co (Juan Almanza)</author>
         </item>
         <item>
             <title><![CDATA[Tú sitio es probablemente ilegal]]></title>
@@ -38,7 +38,7 @@
             <guid>https://scidroid.co/privacy-for-web-developers</guid>
             <pubDate>Fri, 04 Feb 2022 05:00:00 GMT</pubDate>
             <description><![CDATA[Mucha gente piensa que la analítica de sitios web es un complemento más. Pero es mucho más complejo que eso. Aprende a hacer que la analítica proteja la privacidad de tus usuarios y aprende a hacerlo fácilmente.]]></description>
-            <author>scidroid@scidroid.co (Juan Almanza)</author>
+            <author>hi@scidroid.co (Juan Almanza)</author>
         </item>
         <item>
             <title><![CDATA[Una introducción a Git]]></title>
@@ -46,7 +46,7 @@
             <guid>https://scidroid.co/introduction-to-git</guid>
             <pubDate>Wed, 09 Jun 2021 05:00:00 GMT</pubDate>
             <description><![CDATA[Git nos permite gestionar, distribuir y colaborar en nuestro código para que esté organizado y haya un flujo de trabajo eficiente al programar con varias personas, también nos ayudará a hacer cosas como volver a versiones anteriores de nuestro proyecto.]]></description>
-            <author>scidroid@scidroid.co (Juan Almanza)</author>
+            <author>hi@scidroid.co (Juan Almanza)</author>
         </item>
         <item>
             <title><![CDATA[Aprende a programar en Python]]></title>
@@ -54,7 +54,7 @@
             <guid>https://scidroid.co/learning-to-code-in-python</guid>
             <pubDate>Tue, 30 Mar 2021 05:00:00 GMT</pubDate>
             <description><![CDATA[Aprende a programar en Python, un lenguaje de alto nivel, interpretado y multiparadigma utilizado para la Web con Flask y Django, la Inteligencia Artificial y la Ciencia de Datos.]]></description>
-            <author>scidroid@scidroid.co (Juan Almanza)</author>
+            <author>hi@scidroid.co (Juan Almanza)</author>
         </item>
     </channel>
 </rss>

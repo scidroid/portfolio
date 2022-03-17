@@ -5,7 +5,7 @@ const generateRSS = articles => {
   const baseURL = 'https://scidroid.co';
   const author = {
     name: 'Juan Almanza',
-    email: 'scidroid@scidroid.co',
+    email: 'hi@scidroid.co',
     link: 'https://twitter.com/scidroid'
   };
 
